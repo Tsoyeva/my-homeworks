@@ -1,0 +1,51 @@
+h1 {
+    color: rgb(194, 152, 28);
+}
+* {
+    color: rgb(97, 141, 55);
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+.profile {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.profile-image {
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.profile-content h1, .profile-content h3, .profile-content h4 {
+    margin: 5px 0;
+}
+
+.profile-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.profile-content ul li {
+    margin-bottom: 10px;
+}
+
+.profile-content ul li a {
+    text-decoration: none;
+    color: rgb(194, 152, 28)
+}
+
+.profile-content ul li a:hover {
+    text-decoration: underline;
+}
+/* p {
+    display: block;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 4px;
+    margin-inline-end: 4px;
+    margin-top: 1px;
+}
+h2,h3,h4 {
+    margin-top: 10px;
+    margin-bottom: 4px;
+} */
