@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form action="#" method="post" id="my_form" onsubmit="alert(decodeURI(new URLSearchParams(Array.from(new FormData(document.getElementById('my_form')))).toString()));return false;">
+        <div class="form-row">
+  <label for="name">Повне ім’я</label>
+  <input type="text" name="name" id="name">
+</div>
+<div class="form-row">
+  <label for="email">Email</label>
+  <input type="email" name="email" required id="email">
+</div>
+  <div class="form-row">
+  <label for="password">Пароль</label>
+  <input type="password" name="pass" id="password">
+</div>
+<div class="form-row">
+  <label for="confirm-password">Підтвердження пароля</label>
+  <input type="password" name="confirm_password" id="confirm-password">
+</div>
+  <div class="form-row">
+  <label>Стать</label>
+  <label>
+    <input type="radio" name="gender" value="male">
+    Чоловіча
+  </label>
+  <label>
+    <input type="radio" name="gender" value="female">
+    Жіноча
+  </label>
+</div>
+<div class="form-row">
+    <label>Вік</label>
+    <input type="number" name="age" min="16" max="100">
+</div>
+<div class="form-row">
+    <label for="course">Курс</label>
+    <select name="course" id="course">
+    <optgroup label="">
+        <option value="Front-End">Front-End</option>
+        <option value="Back-End">Back-End</option>
+        <option value="Project Management">Project Management</option>
+        <option value="QA Manual">QA Manual</option>
+    </optgroup>
+</select>
+</div>
+<div class="form-row">
+    <label for="adress">Повна адреса проживання</label>
+    <textarea name="adress" id="adress"></textarea>
+</div>
+<div class="form-row">
+    <label for="agree-checkbox">
+    <input type="checkbox" id="agree-checkbox" name="agree">Я погоджуюся з обробкою персональних даних</label>
+</div>
+    <div class="form-row">
+<button type="submit">Зареєструватися</button>
+<button type="reset">Очистити форму</button>
+    </div>
+</form>
+</body>
+</html>
