@@ -1,0 +1,94 @@
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #333;
+    color: #fff;
+}
+
+.container {
+    width: 50%;
+    margin: 50px auto;
+    background-color: #4a4a4a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+
+header h1 {
+    color: #ff7070;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #f7a1a1;
+}
+
+
+.shopping-list {
+    list-style: none;
+    padding: 0;
+    background-color: #5f5c75;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.shopping-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #bbb;
+    background-color: #8677a7;
+    transition: background-color 0.3s;
+}
+
+.shopping-list li:hover {
+    background-color: #766ca5;
+}
+
+
+.shopping-list label {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.shopping-list .item {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.shopping-list .description {
+    font-size: 0.9rem;
+    color: #d4c4f1;
+}
+
+
+.shopping-list input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+    accent-color: #ff7070;
+}
+
+.shopping-list input[type="checkbox"]:checked + label .item {
+    color: #d4c4f1;
+    text-decoration: line-through;
+    font-weight: normal;
+}
+
+
+footer {
+    margin-top: 30px;
+}
+
+footer p {
+    color: #ff7070;
+    font-size: 1.5rem;
+}
