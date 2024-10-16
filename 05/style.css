@@ -3,25 +3,60 @@
     max-width: 970px;
     margin: 0 auto;
   }
-  .img {
-      width: 100%;
-      vertical-align: top;
-      object-fit: contain;
-      
+  .main-img {
+    vertical-align: top;
+    object-fit: contain;
+    width: 970px;
+    height: 387px;
+  }
+  h2 {
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+
+  }
+  :root {
+    --text-color: #070707;
+    --gray-color: #828282;
   }
   #about {
     background-color: #f6f6f6;
     text-align: center;
-  
-    }
+    font-size: 18px;
+    width: 1440px;
+    height: 500px;
+    padding: 50px 0;
+  }
+  #skills {
+    text-align: center;
+    font-size: 18px;
+    width: 1440px;
+    padding: 50px 0;
+    margin-top: 40px;
+  }
+  .product-list li {
+    display: inline-block;
+    margin-right: 97px;
+    margin-top: 50px;
+    width: 170px;
+  }
+  .product-list li:last-child {
+    margin-right: 0;
+  }
+  .product-list .container {
+    width: 970px;
+    height: 564px;
+    padding: 0px 22px;
+
+  }
+  .stars {
+    margin-top: 60px;
+  }
    body {
-   font-family: 'open sans';
+    font-family: system-ui,'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
     color: var(--text-color);
-    font-size: 1.125rem;
     }
-    ul {
-      list-style: none;
-      }
+  
   * {
     padding: 0;
     margin: 0;
@@ -35,22 +70,92 @@
   border-bottom: 1px solid #828282;
   padding: 25px 0 24px;
  }
- .main-menu {
-line-height: 30px;
- }
+ 
+ ul {
+  list-style: none;
+  } 
  .main-menu ul {
   text-align: center;
+  font-size: 0;
  }
 .main-menu ul li {
   display: inline;
-  margin: 20px;
+  margin: 16px;
   width: 120px;
+  font-size: 1.125rem; 
 }
-.main-menu ul li a.hover {
-  color: #828282;
-  
-}
+.main-menu ul li a {
+  color: var(--gray-color);
+  text-decoration: none;
+  line-height: 30px;
+  }
+  .main-menu ul li a:hover {
+    color: var(--text-color);
+    }
 h1 {
-  font-size: 3rem;
-  margin-top: 45px;
+  margin-top: 12px;
+  margin-bottom: 50px;
+  font-size: 50px;
+  width: 300px;
+  height: 60px;
 }
+.first-block {
+  display: inline;
+width: 970px;
+height: 497px;
+flex-direction: column;
+gap: 50px;
+flex-shrink: 0;
+}
+#about h2 {
+  margin-top: 55px;
+  margin-bottom: 50px;
+  font-size: 35px;
+}
+#about p {
+margin-bottom: 10px;
+font-size: 19px;
+}
+#skills h2 {
+  margin-top: 16px;
+  margin-bottom: 24px;
+  font-size: 34px;
+}
+#skills p {
+  font-size: 18px;
+  margin-bottom: 2px;
+  margin-top: 4px;
+}
+#portfolio h2 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+}
+#portfolio  {
+ padding: 50px;
+  background-color: #f6f6f6;
+  width: 1440px;
+  height: 2268px;
+}
+
+  #contacts h2 {
+    text-align: center;
+  }
+  .portfolio img {
+    width: 970px;
+    height: 540px;
+    }
+  .online-store {
+    text-decoration: none;
+    margin: 50px 20px 50px 5px;
+  }
+  #contacts ul li {
+    display: inline;
+  }
+  #contacts .container {
+    width: 970px;
+    height: 400px;
+    padding: 0px 3px;
+
+  }
