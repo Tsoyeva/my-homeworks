@@ -9,6 +9,9 @@
     width: 970px;
     height: 387px;
   }
+  .main-menu li a:hover {
+    color: #070707;
+}
   h2 {
     font-size: 34px;
     font-style: normal;
@@ -142,20 +145,71 @@ font-size: 19px;
   #contacts h2 {
     text-align: center;
   }
-  .portfolio img {
+  #portfolio img {
     width: 970px;
     height: 540px;
     }
+    #portfolio ul li a {
+      display: block;
+      margin-top: 40px;
+      margin-bottom: 70px;
+      font-size: 18px;
+      text-align: center;
+      text-decoration: none;
+      color: #828282;
+    }
+    #portfolio ul li a:hover {
+      color: #070707;
+  }
   .online-store {
     text-decoration: none;
     margin: 50px 20px 50px 5px;
   }
   #contacts ul li {
     display: inline;
+   
   }
   #contacts .container {
     width: 970px;
     height: 400px;
-    padding: 0px 3px;
-
+    padding: 100px 235px 100px 235px;
   }
+  #contacts p {
+    text-align: center;
+    padding: 20px;
+  }
+  .send-message-container {
+    text-align: center;
+  }
+  .send-message {
+      width: 180px;
+      height: 40px;
+      color: #FFF;
+      text-align: center;
+      background-color: #070707;
+      border-radius: 22px;
+      padding: 0px 16px;
+      display: inline-block;
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  .social-icons li {
+    margin: 0 50px;
+  }
+  .social-icons li img {
+    width: 40px;
+    height: 40px;
+    display: block;
+  }
+  .social-text {
+    text-align: center;
+  }
+
+
+   
