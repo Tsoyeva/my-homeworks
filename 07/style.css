@@ -1,0 +1,123 @@
+:root {
+    --var-orange-color: #F90;
+    --var-buttons-blue-color: #BCD0E5;
+    --var-text-color1: #2F281E;
+    --var-text-color2: #544837;
+}
+
+* {
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif; 
+}
+
+.container {
+    width: min(90%, 1200px);
+    margin: 0 auto;
+} 
+
+li {
+    list-style: none; 
+}
+
+.header-nav {
+    margin-top: 1px;
+    margin-bottom: 99px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    color: var(--var-text-color1);
+}
+
+.nav-item {
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    color: var(--var-orange-color);
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+
+.nav-buttons {
+    color: var(--var-text-color1);
+    background-color: #fff;
+    padding: 13px 25px;
+    font-family: Montserrat;
+    margin-bottom: 17px;
+    margin-top: 17px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid var(--var-buttons-blue-color);
+    cursor: pointer;
+}
+
+.nav-buttons:hover {
+    color:  #FFF;
+    background-color: var(--var-orange-color);
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+
+.nav-buttons:first-child {
+    margin-right: 32px;
+}
+
+.sections-buttons {
+    background-color: var(--var-orange-color);
+    border-radius: 4px;
+    border: 0;
+    padding: 13px 40px;
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.sections-buttons:hover {
+    color: var(--var-text-color1);
+    background-color: #fff;
+    cursor: pointer;
+    transition: all .3s ease-in;
+    border: 1px solid var(--var-buttons-blue-color);
+}
+.people-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 56px;
+}
+
+h1 {
+    font-size: 2.75rem;
+    font-weight: 700;
+    line-height: 3.375rem;
+    padding-bottom: 30px;
+}
+
+.text p {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    padding-bottom: 20px;
+}
+
+.people-container img {
+    width: 644px;
+    height: 495px;
+}
