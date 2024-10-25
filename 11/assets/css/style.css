@@ -16,6 +16,9 @@ li {
     display: inline;
     
 }
+img {
+    width: 100%;
+}
 a {
     color: black;
     text-decoration: none;
@@ -57,5 +60,5 @@ p {
     margin-bottom: 40px;
 }
 .background {
-    background-color: rgb(192, 190, 190);
+    background-color: rgb(149, 147, 147);
 }
