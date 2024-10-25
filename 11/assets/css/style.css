@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: min(90%, 1200px);
+    margin: 0 auto;
+    margin-bottom: 70px;
+} 
+nav {
+    
+    font-family: Staatliches, sans-serif;
+}
+li { 
+    display: inline;
+    
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+.header-nav {
+    margin-top: 1px;
+    margin-bottom: 70px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h2 {
+    margin-bottom: 40px;
+    font-family: Francois One, sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 48px; 
+    letter-spacing: 1.44px;
+}
+body {
+    font-family: PT Sans, sans-serif;
+    font-size: 28px;
+    line-height: 48px;
+}
+.line {
+    text-decoration: underline;
+}
+sup {
+    font-family: Farro, sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 1.2px;
+}
+.cursive {
+    font-family: PT Sans Italic, cursive;
+}
+p {
+    margin-bottom: 40px;
+}
+.background {
+    background-color: rgb(192, 190, 190);
+}
