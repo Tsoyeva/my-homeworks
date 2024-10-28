@@ -79,20 +79,25 @@ header {
 main {
     margin-top: 70px;
 }
-   .sidebar {
+.sidebar {
     display: flex;
-    justify-content: space-between;
     align-items: flex-start;
     gap: 20px;
     position: relative;
    } 
-   aside {
+aside {
     position: sticky;
     font-family:'Francois One', sans-serif;
     margin-top: 150px;
     padding: 10px;
     width: 385px;
     top: 80px;
+}
+aside li {
+    display: block;
+}
+.wrapper {
+    width: 785px;
 }
 #introduction {
     padding-top: 80px;
