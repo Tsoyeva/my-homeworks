@@ -35,6 +35,7 @@
 } 
 .item:hover {
     background-color: black;
+    cursor: pointer;
 }
 img:hover {
     filter: invert(1);
