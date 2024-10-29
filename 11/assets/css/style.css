@@ -84,6 +84,8 @@ main {
     align-items: flex-start;
     gap: 20px;
     position: relative;
+    margin-left: 120px;
+    
    } 
 aside {
     position: sticky;
@@ -95,6 +97,8 @@ aside {
 }
 aside li {
     display: block;
+    text-decoration: underline;
+    line-height: 70px;
 }
 .wrapper {
     width: 785px;
@@ -105,7 +109,7 @@ aside li {
 h2 ::before {
     content: "";
     position: absolute;
-    top: -10px; 
+    top: 29px; 
     left: 0;
     width: 100px; 
     height: 8px; 
