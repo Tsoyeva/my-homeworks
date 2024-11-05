@@ -38,7 +38,6 @@ h2 {
     gap: 40px;
     align-self: stretch;
     width: 1170px;
-    /* width: max-content (90%, 1440px); */
 }
 
 .service-cards {
