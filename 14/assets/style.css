@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+ header {
+    display: flex;
+    height: 80px;
+    padding: 0px 135px;
+    flex-direction: column;
+    align-self: stretch;
+    border-bottom: 1px solid #ddd;
+ }
+.main-logo {
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 23px;
+    margin-bottom: 23px;
+
+}
+hgroup {
+    text-align: left;
+    gap: 10px;
+}
+h2 {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 52px; 
+    letter-spacing: 0.2px;
+}
+.container {
+    display: flex;
+    padding: 100px 135px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    align-self: stretch;
+    width: 1170px;
+    /* width: max-content (90%, 1440px); */
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    
+}
+
+.service-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.service-card:hover {
+    border-color: #4CAF50;
+}
+
+.service-card svg {
+    margin-bottom: 20px;
+}
+
+.service-card h4 {
+    font-size: 20px;
+    color: #333;
+}
+
+.service-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.service-card a {
+    color: #1E88E5;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.service-card a:hover {
+    text-decoration: underline;
+}
+
+ footer {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; 
+    background-color: #2C3E50;
+    padding: 40px 135px;
+    text-align: left;
+    color: #fff;
+    gap: 10px;
+}
+
+  footer .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}  
+
+ .icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    fill: #FFFFFF;
+    transition: fill 0.3s ease;
+}
+
+.icon:hover {
+    fill: #1E88E5;
+}  
