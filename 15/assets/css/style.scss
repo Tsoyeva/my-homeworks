@@ -1,1 +1,119 @@
- 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.team {
+    text-align: center;
+    padding: 50px;
+    background-color: #f9f9f9;
+
+    &__subtitle {
+        font-size: 14px;
+        color: #aaa;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        font-size: 48px;
+        font-weight: bold;
+        color: #FFC107;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+        position: relative;
+        
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            background-color: #FFC107;
+        }
+
+       
+        &::before {
+            top: -30px; 
+            left: 50%;
+            width: 300px; 
+            height: 2px;
+            transform: translateX(-50%);
+        }
+
+        &::after {
+            top: 0;
+            left: 50%;
+            width: 2px;
+            height: 100%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__image-wrapper {
+        position: relative;
+        padding: 20px;
+        border: 2px solid #FFC107;
+        display: inline-block;
+
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            background-color: #FFC107;
+        }
+
+        &:before {
+            top: -10px;
+            left: -10px;
+            width: 30px;
+            height: 2px;
+        }
+
+        &:after {
+            bottom: -10px;
+            right: -10px;
+            width: 2px;
+            height: 30px;
+        }
+    }
+
+    &__image {
+        max-width: 250px;
+        border-radius: 5px;
+    }
+
+    &__info {
+        max-width: 400px;
+        margin-left: 200px;
+        text-align: center;
+    }
+
+    &__name {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+    }
+    &__button {
+        display: inline-block;
+        padding: 10px 20px;
+        border: 2px solid #FFC107;
+        color: #FFC107;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-decoration: none;
+        transition: background-color 0.3s, color 0.3s;
+
+        &:hover {
+            background-color: #FFC107;
+            color: #fff;
+        }
+    }
+}
