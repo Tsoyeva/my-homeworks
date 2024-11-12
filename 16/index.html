@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,61 +10,74 @@
     <link rel="stylesheet" href="assets/css/style.min.css">
 
 </head>
+
 <body>
     <header>
         <div class="sidebar">
             <div class="logo">
                 <a href="#">
                     <img src="assets/img/logo (1).svg" alt=""></a>
-                    <button class="toggle-btn"><i class="fa-solid fa-chevron-right"></i></button>
-                </div>
-                    <nav>
-                        <ul class="menu">
-                        <li class="menu-item active">
-                            <a href="#"><i class="fa-solid fa-desktop"></i><span>Dashboard</a></span></li>
-                            <li class="menu-section">APPS</li>  
-                                <li class="menu-item"><a href="#"><i class="fa-regular fa-envelope"></i><span>Email</a></span>
-                                </li>
-                                <li class="menu-item"><a href="#"><i class="fa-regular fa-comment"></i><span>Chats</a></span>
-                                </li>
-                                <li class="menu-item"><a href="#"><i class="fa-regular fa-calendar-days"></i><span>Calendar</a></span>
-                                </li>
-                                <li class="menu-item"><a href="#"><i class="fa-solid fa-newspaper"></i><span>News</a></span>
-                                </li>
-                                <li class="menu-item"><a href="#"><i class="fa-solid fa-graduation-cap"></i><span>Knowledge</a></span>
-                                </li>
-                                <li class="menu-item"><a href="#"><i class="fa-solid fa-inbox"></i><span>File manager</a></span>
-                                </li>
-                                <li class="menu-item"><a href="#"><i class="fa-solid fa-location-dot"></i><span>Leaflet Maps</a></span>
-                                </li>
-                            </li>
-                    
-                                <li class="menu-section">AUTH PAGES</li>
-                                <li class="menu-item"><a href="#"><i class="fa-regular fa-user"></i><span>Profile</a></span>
-                                </li>
-                                <li class="menu-item"><a href="#"><i class="fa-solid fa-lock"></i></i><span>Permissions</a></span>
-                                </li>
-                                <li class="menu-item"><a href="#"><i class="fa-solid fa-key"></i><span>Log Out</a></span>
-                                </li>  
-                            </li>
-                                <li class="menu-section">USER INTERFACE</li>
-                                <li class="menu-item"><a href="#"><i class="fa-regular fa-eye"></i><span>Feather</a>
-                                </span></li>
-                                <li class="menu-item"><a href="#"><i class="fa-solid fa-wallet"></i><span>Ecommerce</a></span>
-                                </li>
-                                <li class="menu-item"><a href="#"><i class="fa-solid fa-flask"></i><span>Components</a></span>
-                                </li>
-                                <li class="menu-item"><a href="#"><i class="fa-regular fa-file-lines"></i><span>Pages</a></span>
-                                </li>
-                                <li class="menu-item"><a href="#"><i class="fa-solid fa-pencil"></i><span>Editor</a></span>
-                                </li>
-                    </ul>
-                    </nav>
+            </div>
+            <button class="toggle-btn"><i class="fa-solid fa-chevron-left"></i></button>
+            <nav>
+                <ul class="menu">
+                    <li class="menu-item active">
+                        <a href="#"><i class="fa-solid fa-desktop"></i><span>Dashboard</a></span>
+                    </li>
+                    <li class="menu-section">APPS</li>
+                    <li class="menu-item"><a href="#"><i class="fa-regular fa-envelope"></i><span>Email</a></span>
+                    </li>
+                    <li class="menu-item"><a href="#"><i class="fa-regular fa-comment"></i><span>Chats</a></span>
+                    </li>
+                    <li class="menu-item"><a href="#">
+                        <i class="fa-regular fa-calendar-days"></i><span>Calendar</a></span>
+                    </li>
+                    <li class="menu-item"><a href="#"><i class="fa-solid fa-newspaper"></i><span>News</a></span>
+                    </li>
+                    <li class="menu-item"><a href="#"><i
+                                class="fa-solid fa-graduation-cap"></i><span>Knowledge</a></span>
+                    </li>
+                    <li class="menu-item"><a href="#"><i class="fa-solid fa-inbox"></i><span>File manager</a></span>
+                    </li>
+                    <li class="menu-item"><a href="#"><i class="fa-solid fa-location-dot"></i><span>Leaflet
+                                Maps</a></span>
+                    </li>
+                    </li>
+
+                    <li class="menu-section">AUTH PAGES</li>
+                    <li class="menu-item"><a href="#"><i class="fa-regular fa-user"></i><span>Profile</a></span>
+                    </li>
+                    <li class="menu-item"><a href="#"><i class="fa-solid fa-lock"></i></i><span>Permissions</a></span>
+                    </li>
+                    <li class="menu-item"><a href="#"><i class="fa-solid fa-key"></i><span>Log Out</a></span>
+                    </li>
+                    </li>
+                    <li class="menu-section">USER INTERFACE</li>
+                    <li class="menu-item"><a href="#"><i class="fa-regular fa-eye"></i><span>Feather</a>
+                        </span></li>
+                    <li class="menu-item"><a href="#"><i class="fa-solid fa-wallet"></i><span>Ecommerce</a></span>
+                    </li>
+                    <li class="menu-item"><a href="#"><i class="fa-solid fa-flask"></i><span>Components</a></span>
+                    </li>
+                    <li class="menu-item"><a href="#"><i class="fa-regular fa-file-lines"></i><span>Pages</a></span>
+                    </li>
+                    <li class="menu-item"><a href="#"><i class="fa-solid fa-pencil"></i><span>Editor</a></span>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main class="content">
         <img src="assets/img/bg.png" alt="">
     </main>
-    <script src="assets/js/sidebar.js"></script>
+    <script>
+        const sidebar = document.querySelector('.sidebar');
+        const toggleBtn = document.querySelector('.toggle-btn');
+        
+        toggleBtn.addEventListener('click', function() {
+            sidebar.classList.toggle('collapsed');
+        });
+    </script>
 </body>
+
 </html>
