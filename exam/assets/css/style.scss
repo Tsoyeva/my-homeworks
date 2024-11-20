@@ -1,0 +1,171 @@
+$primary-color: #5373FD;
+$secondary-color: #333;
+$text-light: #fff;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+  }
+body {
+   font-family: "Josefin Sans", sans-serif;
+   font-weight: 400;
+   line-height: 26px;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .bhromaon {
+   padding: 277px 0 142px;
+   background: url(/exam/assets/img/head.jpg) /cover/no-repeat;
+  .bhromaon-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+   h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 3rem;
+    color: $text-light;
+    margin-bottom: 11px;
+  }
+  .bhromaon-subtitle {
+    color: $text-light;
+    font-weight: 400;
+    font-size: 1.3rem;
+    letter-spacing: 6.82px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .bhromaon-search {
+    display: flex;
+    justify-content: space-between; 
+    width: 656px;
+    height: 63px;
+    padding: 5px 4px;
+    background-color: $text-light;
+    margin: 0 auto;
+    }
+    .bhromaon-input {
+      width: 503px;
+      height: 100%;
+      padding: 19px;
+      text-align: center;
+      outline: none;
+      border: none; 
+    }
+    .bhromaon-btn {
+      display: flex;
+      column-gap: 10px;
+      align-items: center;
+      justify-content: center;
+      background: $primary-color;
+      padding: 20px 20px 13px;
+      color: $text-light;
+      border: none;
+      font-weight: 400;
+      font-size: .8rem;
+      // line-height: 26px;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+  }
+  .scroll-down {
+    position: relative;
+    font-weight: 400;
+    font-size: .8rem;
+    color: $text-light;
+    letter-spacing: 2.8px;
+    margin-top: 107px;
+    background: transparent;
+    .scroll-down-arrow {
+       position: absolute;
+       bottom: -25px;
+       left: 45px;
+    }
+  }
+  main {
+    position: relative; 
+  }
+  header {
+    background: $primary-color;
+    position: sticky;
+    .header-nav {
+       padding: 32px 0 25px;
+       display: flex;
+       justify-content: space-between;
+    }
+    .header-links {
+      display: flex;
+      column-gap: 20px; 
+    }
+    .header-title {
+      font-weight: 700;
+      font-size: 1.5rem;
+      line-height: 26px;
+      color: $text-light;
+    }
+    .header-item {
+      font-weight: 400;
+      font-size: .8rem;
+      line-height: 26px;
+      text-transform: uppercase;
+      color: $text-light; 
+    }
+  }
+.choose {
+  background: url(../img/WhyChoose.png) center/cover no-repeat;
+  }
+.choose-content {
+  display: flex;
+  padding:  118px 0;
+  column-gap: 100px;
+  .choose-us {
+    display: flex;
+    flex-direction: column; 
+    row-gap: 50px;
+    justify-content: center ;
+  }
+  .choose-title {
+    font-weight: 400;
+    font-size: 2.25rem;
+    line-height: 26px;
+    color: $text-light;
+  }
+  .choose-text {
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 1.6px;
+    color: $text-light;
+  }
+  .choose-image {
+    width: 100%;
+    
+  }
+  .choose-btn {
+    width: 228px;
+    height: 63px;
+    background: $primary-color;
+    font-size: 1rem;
+    color: $text-light;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+  }
+  .choose-img1 {
+    position: relative;
+    left: 50px;
+    margin-bottom: 16px;
+  }
+  .choose-img2 {
+    position: relative;
+    left: 124px;
+  }
+}
