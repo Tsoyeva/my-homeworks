@@ -20,7 +20,7 @@ body {
 
 .bhromaon {
   padding: 277px 0 142px;
-  background: url(../assets/img/head.jpg)/cover/no-repeat;
+  background: url(../img/head.jpg)/cover/no-repeat;
   height: calc(100vh-20px);
 }
 .bhromaon .bhromaon-content {
@@ -156,7 +156,7 @@ header .header-item:hover {
 }
 
 .choose {
-  background: url(../img/WhyChoose.png) center/cover no-repeat;
+  background: url(../img/WhyChoose.png)/cover/no-repeat;
 }
 .choose .choose-content {
   display: flex;
@@ -284,7 +284,7 @@ header .header-item:hover {
 }
 
 .spain {
-  background: url(../img/apartmen.png)/cover no-repeat;
+  background: url(../img/apartmen.png)/cover/no-repeat;
   padding: 227px 0 100px;
   position: relative;
 }
