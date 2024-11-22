@@ -114,7 +114,31 @@ body {
     }
     .header-links {
       display: flex;
-      column-gap: 20px; 
+      gap: 20px; 
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    .header-links.hidden {
+      transform: translateY(-200%);
+      opacity: 0;
+      pointer-events: none;
+    }
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      height: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+    .hamburger span {
+      color: white;
+      display: block;
+      width: 25px;
+      height: 1px;
+      background: $text-light;
+      border-radius: 2px;
     }
     .header-title {
       font-weight: 700;
@@ -261,8 +285,6 @@ body {
   position: relative;
   }
   .card-icon span {
-  // width: 60px;
-  // height: 60px;
   display: flex;
   font-size: 60px;
   align-items: center;
@@ -533,6 +555,10 @@ footer {
 }
 
 @media (max-width: 480px) {
+  .header-links {
+    
+
+  }
   .tourist-img img {
     width: 100%;
   }
@@ -581,5 +607,43 @@ footer {
   .footer-links {
     flex-direction: column;
     gap: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .header-links {
+      position: absolute;
+      top: 80px;
+      right: 0;
+      width: 100%;
+      background: $text-light; 
+      flex-direction: column;
+      gap: 15px;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transform: translateY(-200%);
+      opacity: 0;
+      pointer-events: none;
+  }
+
+  .header-links.active {
+      transform: translateY(0);
+      opacity: 1;
+      pointer-events: auto;
+      background-color: $primary-color;
+  }
+
+  header {
+    .header-title {
+      margin-left: 110px;
+    }
+    .hamburger {
+      display: block;
+      
+      span {
+        margin-bottom: 3px;
+      }
+    }
+    
   }
 }

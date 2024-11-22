@@ -33,6 +33,11 @@
         <div class="container">
         <nav class="header-nav">
             <h2 class="header-title">BHROMAON</h2>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul class="header-links">
                 <li class="header-item">Who We Are</li>
                 <li class="header-item">What We Do</li>
@@ -132,5 +137,14 @@
             <li><a href="#" class="icon-youtube-play"></a></li>
             <li><a href="#" class="icon-pinterest-circled"></a></li>
         </ul>
+</footer>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const headerLinks = document.querySelector('.header-links');
+
+        hamburger.addEventListener('click', () => {
+            headerLinks.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
