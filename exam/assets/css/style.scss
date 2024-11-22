@@ -10,7 +10,7 @@ $text-light: #fff;
     scroll-behavior: smooth;
   }
 body {
-   font-family: "Josefin Sans", sans-serif;
+   font-family: 'Josefin Sans', sans-serif;
    font-weight: 400;
    line-height: 26px;
   }
@@ -21,7 +21,9 @@ body {
   .bhromaon {
    padding: 277px 0 142px;
    background: url(/exam/assets/img/head.jpg) /cover/no-repeat;
-  .bhromaon-content {
+   height: calc(100vh-20px);
+  
+   .bhromaon-content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,10 +72,11 @@ body {
       border: none;
       font-weight: 400;
       font-size: .8rem;
-      // line-height: 26px;
       letter-spacing: 1.4px;
       text-transform: uppercase;
       cursor: pointer;
+      font-family: Aleo, serif;
+      line-height: 20px;
     }
   }
   .scroll-down {
@@ -84,11 +87,15 @@ body {
     letter-spacing: 2.8px;
     margin-top: 107px;
     background: transparent;
+    transition: color 0.3s ease, transform 0.3s ease;
     .scroll-down-arrow {
        position: absolute;
        bottom: -25px;
        left: 45px;
     }
+  }
+  .scroll-down:hover {
+   transform: scale(1.5);
   }
   main {
     position: relative; 
@@ -96,6 +103,10 @@ body {
   header {
     background: $primary-color;
     position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+   
     .header-nav {
        padding: 32px 0 25px;
        display: flex;
@@ -108,64 +119,406 @@ body {
     .header-title {
       font-weight: 700;
       font-size: 1.5rem;
-      line-height: 26px;
       color: $text-light;
     }
     .header-item {
       font-weight: 400;
       font-size: .8rem;
-      line-height: 26px;
+      line-height: 20px; 
+      letter-spacing: 1.4px;
       text-transform: uppercase;
-      color: $text-light; 
+      transition: color 0.3s ease, transform 0.3s ease;
+      color: $text-light;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      font-family: Aleo, serif;
+    }
+    .header-item::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 1px; 
+      background-color: $text-light; 
+      transition: width 0.3s ease;
+       }
+    .header-item:hover::after {
+      width: 100%;
+      }
+    .header-item:hover {
+      color: #FFD700; 
+      transform: scale(1.2);
     }
   }
 .choose {
   background: url(../img/WhyChoose.png) center/cover no-repeat;
-  }
-.choose-content {
-  display: flex;
-  padding:  118px 0;
-  column-gap: 100px;
-  .choose-us {
+  
+    .choose-content {
     display: flex;
-    flex-direction: column; 
-    row-gap: 50px;
-    justify-content: center ;
-  }
-  .choose-title {
-    font-weight: 400;
-    font-size: 2.25rem;
-    line-height: 26px;
-    color: $text-light;
-  }
-  .choose-text {
-    font-weight: 400;
-    font-size: 1rem;
-    letter-spacing: 1.6px;
-    color: $text-light;
-  }
-  .choose-image {
-    width: 100%;
-    
-  }
-  .choose-btn {
+    padding:  118px 0;
+    column-gap: 100px;}
+
+    .choose-us {
+      display: flex;
+      flex-direction: column; 
+      row-gap: 50px;
+      justify-content: center ;
+    }
+    .choose-title {
+      font-weight: 400;
+      font-size: 2.25rem;
+      line-height: 26px;
+      color: $text-light;
+      font-family: Aleo, serif;
+    }
+    .choose-text {
+      font-weight: 400;
+      font-size: 1rem;
+      letter-spacing: 1.6px;
+      color: $text-light;
+    }
+    .choose-image {
+      width: 100%;
+      
+    }
+   .choose-btn {
     width: 228px;
     height: 63px;
-    background: $primary-color;
+    background: linear-gradient(90deg, #5373FD, #3b5dc5, #1f3384); 
+    background-size: 300%; 
     font-size: 1rem;
-    color: $text-light;
+    color: white;
+    font-family: Aleo, serif;
     letter-spacing: 1.2px;
     text-transform: uppercase;
     cursor: pointer;
     border: none;
+    animation: gradient-move 3s infinite linear; 
+    transition: color 0.3s ease, box-shadow 0.3s ease;
+    }
+    @keyframes gradient-move {
+    0% {
+        background-position: 0% 50%;
+      }
+    100% {
+        background-position: 100% 50%;
+      }
+    }
+  .choose-btn:hover {
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(83, 115, 253, 0.5);
   }
-  .choose-img1 {
-    position: relative;
-    left: 50px;
-    margin-bottom: 16px;
+    .choose-img1 {
+      position: relative;
+      left: 50px;
+      margin-bottom: 16px;
+    }
+    .choose-img2 {
+      position: relative;
+      left: 124px;
+    }
   }
-  .choose-img2 {
+.icon {
+  background: $secondary-color;
+  padding: 100px 0;
+  .icon-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  .card-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     position: relative;
-    left: 124px;
+    row-gap: 20px;
+  } 
+  .icon-search  {
+    font-size: 40px;
+    color: $primary-color;
+  }
+  .icon-ok-circled2 {
+    font-size: 40px;
+    color: #FF6363;
+  }
+  .icon-thumbs-up{
+    font-size: 40px;
+    color: #00A2FF;
+  }
+  .card-icon-title {
+    font-size: 2.25rem;
+    color: $text-light;
+    font-family: Aleo, serif;
+    font-weight: 400;
+  }
+  .icon-row {
+  display: flex;
+  align-items: center;
+  position: relative;
+  }
+  .card-icon span {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+  }
+  .card-icon:not(:first-child)::before {
+  content: '';
+  position: absolute;
+  top: -50px; 
+  left: -368px; 
+  width: 436px; 
+  height: 100px; 
+  border-top: 2px dashed #aaa; 
+  border-radius: 50%; 
+  z-index: 0;
+  }
+}
+.spain {
+  background: url(../img/apartmen.png) / cover no-repeat;
+  padding: 227px 0 100px;
+  position: relative;
+}
+.spain-card {
+  width: 649px;
+  padding: 44px 32px;
+  display: flex;
+  flex-direction: column;
+  background: #232323;
+  opacity: 0; 
+  transform: translateY(50px); 
+  animation: slideIn 1.3s ease-out forwards; 
+}
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px); 
+  }
+  100% {
+    opacity: .9;
+    transform: translateY(0); 
+  }
+}
+.spain-card-title {
+  font-weight: 400;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  color: $text-light;
+  margin: 23px 0 13px;
+}
+
+.spain-card-subtitle {
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  line-height: 26px;
+  font-size: 1.25rem;
+  color: $text-light;
+}
+
+.spain-card-text {
+  font-weight: 400;
+  line-height: 26px;
+  font-size: 1.25rem;
+  color: $text-light;
+}
+
+.spain-btn {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 26px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: $text-light;
+  background: $primary-color;
+  border: none;
+  cursor: pointer;
+  width: 228px;
+  height: 63px;
+  padding: 20px 35px;
+  margin-top: 24px;
+}
+.spain2 {
+  background: url(../img/spain.png)/cover/no-repeat;
+.spain-block {
+  display: flex;
+  justify-content: right;
+}
+}
+.tourist {
+  background: url(../img/BGfooter.png)/cover/no-repeat;
+  padding: 128px  0 200px;
+  .tourist-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 90px;
+  }
+  .tourist-block {
+    display: flex;
+    background: $secondary-color;
+    height: 280px;
+    flex-shrink: 0;
+  }
+  .tourist-title {
+    text-align: center;
+    font-family: Aleo;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: capitalize;
+    color: $text-light;
+  }
+  .tourist-text {
+    padding: 50px 25px 39px 62px;
+    color: $text-light;
+  }
+  .tourist-text-title {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+    text-transform: uppercase;
+  }
+  blockquote {
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 28px;
+    letter-spacing: 1.6px;
+    color: $text-light;
+  }
+  .icon-quote-left {
+    width: 20px;
+    height: 20px;
+    color: $primary-color;
+    flex-shrink: 0;
+    position: relative;
+    left: -5px;
+    padding: 10px 6px 20px 0;
+  }
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: black;
+  padding: 122px 0 23px;
+
+  .footer-title {
+    color: $text-light;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; 
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .footer-subtitle {
+    color: $text-light;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1.6px;
+  }
+  .footer-links {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    column-gap: 32px;
+  }
+  .footer-links a {
+    color: $text-light;
+    font-size: 32px;
+  }
+  .footer-links a {
+    color: $text-light;
+    font-size: 32px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: $primary-color; 
+    transform: scale(1.5); 
+}
+}
+@media (max-width: 768px) {
+  .bhromaon h1 {
+    font-size: 2.5rem;
+  }
+
+  .bhromaon-search {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .choose-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .choose-us {
+    text-align: center;
+  }
+
+  .choose-image img {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .icon-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .spain-card {
+    max-width: 90%;
+  }
+
+  .footer-links {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bhromaon h1 {
+    font-size: 2rem;
+  }
+
+  .bhromaon-subtitle {
+    font-size: 1rem;
+  }
+
+  .choose-title {
+    font-size: 1.8rem;
+  }
+
+  .choose-text {
+    font-size: 0.9rem;
+  }
+
+  .choose-btn {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .spain-card {
+    padding: 15px;
+  }
+
+  .tourist-title {
+    font-size: 1.5rem;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
   }
 }
