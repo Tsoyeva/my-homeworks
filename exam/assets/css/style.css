@@ -228,7 +228,8 @@ header .header-item:hover {
 }
 .icon .icon-row {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 24px;
 }
 .icon .card-icon {
   display: flex;
@@ -237,6 +238,7 @@ header .header-item:hover {
   flex-direction: column;
   position: relative;
   row-gap: 20px;
+  width: 364px;
 }
 .icon .icon-search {
   font-size: 40px;
@@ -262,25 +264,26 @@ header .header-item:hover {
   position: relative;
 }
 .icon .card-icon span {
-  width: 60px;
-  height: 60px;
   display: flex;
+  font-size: 60px;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   position: relative;
-  z-index: 1;
+  background-color: #333;
+  z-index: 999;
 }
 .icon .card-icon:not(:first-child)::before {
   content: "";
   position: absolute;
-  top: -50px;
-  left: -368px;
-  width: 436px;
-  height: 100px;
+  top: -55px;
+  left: -221px;
+  width: 420px;
+  height: 300px;
   border-top: 2px dashed #aaa;
   border-radius: 50%;
   z-index: 0;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 20%, 0% 20%);
 }
 
 .spain {
@@ -455,7 +458,44 @@ footer .footer-links a:hover {
   transform: scale(1.5);
 }
 
+@media (max-width: 1024px) {
+  .choose .choose-us {
+    margin-left: 20px;
+  }
+  .choose .choose-content {
+    column-gap: 0;
+  }
+  .choose .choose-img2 {
+    left: 60px;
+  }
+}
 @media (max-width: 768px) {
+  .choose .choose-content {
+    padding: 0;
+  }
+  .choose .choose-us {
+    margin-top: 32px;
+    align-items: center;
+    order: 2;
+  }
+  .choose .choose-img1 {
+    left: 0;
+    margin-bottom: 0;
+    margin-top: 60px;
+  }
+  .choose .choose-img2 {
+    left: 0;
+    margin-left: 24px;
+  }
+
+  .icon .card-icon {
+    margin-bottom: 60px;
+  }
+
+  .card-icon:not(:first-child)::before {
+    display: none;
+  }
+
   .bhromaon h1 {
     font-size: 2.5rem;
   }
@@ -494,6 +534,21 @@ footer .footer-links a:hover {
   }
 }
 @media (max-width: 480px) {
+  .tourist-img img {
+    width: 100%;
+  }
+
+  .tourist .tourist-block {
+    flex-direction: column;
+  }
+
+  .bhromaon .bhromaon-search {
+    width: 80%;
+  }
+  .bhromaon .bhromaon-input {
+    width: 80%;
+  }
+
   .bhromaon h1 {
     font-size: 2rem;
   }
