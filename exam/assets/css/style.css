@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   line-height: 26px;
 }
@@ -20,7 +20,7 @@ body {
 
 .bhromaon {
   padding: 277px 0 142px;
-  background: url(/exam/assets/img/head.jpg)/cover/no-repeat;
+  background: url(../assets/img/head.jpg)/cover/no-repeat;
   height: calc(100vh-20px);
 }
 .bhromaon .bhromaon-content {
@@ -387,7 +387,7 @@ header .header-item:hover {
   color: #fff;
 }
 .tourist .tourist-text-title {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 1.25rem;
   font-style: normal;
   font-weight: 400;

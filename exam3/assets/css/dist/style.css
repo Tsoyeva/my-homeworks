@@ -3,7 +3,8 @@
 *::before {
   box-sizing: border-box;
 }
-*{
+
+* {
   margin: 0;
   padding: 0;
   border: 0;
@@ -62,42 +63,36 @@ input {
   font-weight: 700;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Lato";
   src: local("Lato Semibold"), local("Lato-Semibold"), url("../fonts/Lato-Semibold.woff2") format("woff2"), url("../fonts/Lato-Semibold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Lato";
   src: local("Lato Regular"), local("Lato-Regular"), url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Lato";
   src: local("Lato Light"), local("Lato-Light"), url("../fonts/Lato-Light.woff2") format("woff2"), url("../fonts/Lato-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Playfair Display";
   src: local("Playfair Display"), local("Playfair-Display"), url("../fonts/PlayfairDisplay-Italic.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Italic.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Playfair Display";
   src: local("Playfair Display Regular"), local("Playfair-Display Regular"), url("../fonts/PlayfairDisplay-Regular.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
-
 .btn {
   display: inline-block;
   font-family: "Lato", sans-serif;
@@ -251,7 +246,7 @@ body.dark .big-color-btn:hover {
 
 body.dark .header .nav__link:hover {
   -webkit-text-decoration-color: rgba(83, 243, 206, 0.3450980392);
-          text-decoration-color: rgba(83, 243, 206, 0.3450980392);
+  text-decoration-color: rgba(83, 243, 206, 0.3450980392);
 }
 
 body.dark .header .sun-icon path {
@@ -376,7 +371,7 @@ body.dark .footer__text {
 .header {
   background: linear-gradient(270deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.244636) 24.1%, rgba(255, 255, 255, 0) 47.19%), rgba(255, 255, 255, 0.02);
   -webkit-backdrop-filter: blur(9px);
-          backdrop-filter: blur(9px);
+  backdrop-filter: blur(9px);
   padding: 24px 0;
   max-width: 1440px;
   width: 100%;
@@ -421,7 +416,7 @@ body.dark .footer__text {
 
 .header__nav .nav__link {
   -webkit-text-decoration-color: transparent;
-          text-decoration-color: transparent;
+  text-decoration-color: transparent;
   transition: -webkit-text-decoration 0.8s;
   transition: text-decoration 0.8s;
   transition: text-decoration 0.8s, -webkit-text-decoration 0.8s;
@@ -431,7 +426,7 @@ body.dark .footer__text {
   text-decoration: underline;
   text-underline-offset: 8px;
   -webkit-text-decoration-color: rgba(241, 137, 123, 0.3);
-          text-decoration-color: rgba(241, 137, 123, 0.3);
+  text-decoration-color: rgba(241, 137, 123, 0.3);
   text-decoration-thickness: 3px;
 }
 
@@ -466,7 +461,7 @@ body.dark .footer__text {
 .header .change-theme-btn .moon-icon {
   width: 100%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   overflow: hidden;
 }
 
@@ -717,7 +712,7 @@ body.dark .footer__text {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .video .frame__play-img {
@@ -840,7 +835,7 @@ body.dark .footer__text {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .reviews .review__content {
@@ -1039,7 +1034,6 @@ body.dark .footer__text {
     margin: 0 auto;
   }
 }
-
 @media (max-width: 1155px) {
   body.dark .main {
     background-image: none;
@@ -1052,7 +1046,6 @@ body.dark .footer__text {
     background-size: cover;
   }
 }
-
 @media (max-width: 1024px) {
   .contact .form__left {
     align-self: center;
@@ -1067,7 +1060,6 @@ body.dark .footer__text {
     font-size: 16px;
   }
 }
-
 @media (max-width: 840px) {
   .big-color-btn {
     padding: 26px 70px;
@@ -1106,12 +1098,11 @@ body.dark .footer__text {
   }
 
   .info .info__card-left,
-  .info .info__card-right {
+.info .info__card-right {
     padding-left: 5px;
     padding-right: 5px;
   }
 }
-
 @media (max-width: 768px) {
   .hero__title {
     font-size: 32px;
@@ -1247,7 +1238,6 @@ body.dark .footer__text {
     gap: 30px;
   }
 }
-
 @media (max-width: 640px) {
   .promisies__content {
     grid-template: repeat(4, 1fr)/1fr;
@@ -1258,7 +1248,6 @@ body.dark .footer__text {
     max-width: none;
   }
 }
-
 @media (max-width: 480px) {
   .info .info__list {
     flex-direction: column;
@@ -1279,7 +1268,6 @@ body.dark .footer__text {
     padding-right: 5px;
   }
 }
-
 @media (max-width: 425px) {
   .quote {
     margin-top: 60px;
