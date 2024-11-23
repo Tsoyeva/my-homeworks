@@ -640,4 +640,13 @@ footer .footer-links a:hover {
   header .hamburger span {
     margin-bottom: 3px;
   }
+
+  .footer {
+    padding: 160px 0 70px;
+    margin-top: 80px;
+  }
+
+  .footer-links {
+    flex-direction: row;
+  }
 }
