@@ -77,8 +77,27 @@ body {
       cursor: pointer;
       font-family: Aleo, serif;
       line-height: 20px;
+      background: linear-gradient(90deg, #5373FD, #3b5dc5, #1f3384); 
+      background-size: 300%; 
+      font-size: 1rem;
+      color: white;
+      animation: gradient-move 3s infinite linear; 
+      transition: color 0.3s ease, box-shadow 0.3s ease;
+      }
+    @keyframes gradient-move {
+    0% {
+        background-position: 0% 50%;
+      }
+    100% {
+        background-position: 100% 50%;
+      }
     }
+  .choose-btn:hover {
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(83, 115, 253, 0.5);
   }
+    }
+  
   .scroll-down {
     position: relative;
     font-weight: 400;
