@@ -396,7 +396,6 @@ header .header-item:hover {
 .tourist .tourist-block {
   display: flex;
   background: #333;
-  height: 280px;
   flex-shrink: 0;
 }
 .tourist .tourist-title {
