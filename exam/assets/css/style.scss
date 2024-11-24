@@ -761,12 +761,8 @@ footer {
   }
 }
 
-@media (max-width: 480px) {
-  .header-links {
-    
-
-  }
-  .tourist-img img {
+@media (max-width: 480px) 
+.tourist-img img {
     width: 100%;
   }
   .tourist {
