@@ -31,7 +31,7 @@ function calculateSpeed() {
         `To cover ${distance} km in ${time} hours, you need to travel at a speed of ${speed.toFixed(2)} km/h.`;
 }
 function convertCurrency() {
-    const exchangeRate = 0.92; 
+     const exchangeRate = 0.92; 
     
     const dollars = parseFloat(prompt("Enter the amount in USD:"));
     

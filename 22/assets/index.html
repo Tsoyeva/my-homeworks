@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+</head>
+<body>
+ <main>
+    <div class="container">
+        <h2>Скільки файлів вмістить флешка?</h2>
+    <label for="flashSize">Об'єм флешки (ГБ):</label>
+    <input type="number" id="flashSize" placeholder="Вкажiть об'єм флешки" />
+    <button type="button" onclick="calculateFiles()">Розрахувати</button>
+    <p id="result-mb">Відповідь:</p>
+    </div>
+    <div class="container">
+        <h2>Розрахунок</h2>
+    <label for="money">Сума коштів в гаманці:</label>
+    <input type="number" id="money" placeholder="Введіть суму"><br><br>
+
+    <label for="price">Вартість однієї шоколадки:</label>
+    <input type="number" id="price" placeholder="Введіть вартість"><br><br>
+
+    <button onclick="calculateChocolates()">Розрахувати</button>
+
+    <p id="result-choco"></p>
+    </div>
+
+
+ </main>
+    
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
