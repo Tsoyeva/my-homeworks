@@ -35,3 +35,21 @@ function calculateChocolates() {
     document.getElementById("result-choco").innerText =
         `Ви можете купити ${chocolates} шт. Ваша решта: ${change} грн.`;
 }
+
+function calculateInvest() {
+    const deposit = parseFloat(document.getElementById("deposit").value);
+
+    if (isNaN(deposit) || deposit <= 0) {
+        document.getElementById("result-bank").innerText = "Введіть коректне значення.";
+        return;
+    }   
+
+    const annualRate = 5;
+    const mounths = 2;
+
+    const mounthlyRate = annualRate / 12 / 100;
+    const invest = (deposit * mounthlyRate * mounths).toFixed(2);
+
+    document.getElementById("result-bank").innerText =
+    `Сума нарахованих відсотків за 2 місяці: ${invest} грн.`;
+} 
