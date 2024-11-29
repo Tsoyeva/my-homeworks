@@ -12,7 +12,7 @@ const sum = Number(str) + num;
 
 console.log(`${sum}`);
 
-function calculateFiles () {
+function calculateFiles() {
     const flashSizeGB = document.getElementById('flashSize').value;
     const fileSizeMB = 820;
     const flashSizeMB = flashSizeGB * 1024;

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Дізнайтеся, до якої вікової групи ви належите:</h2>
+        <label for="age">Введіть ваш вік:</label>
+        <input type="number" id="age" placeholder="Ваш вік">
+        <button type="button" onclick="checkAge()">Перевірити</button>
+        <p id="result-test">Відповідь:</p>
+    </div>
+    <div class="container">
+        <h2>Спецсимвол на клавіші</h2>
+        <label for="digit">Введіть число от 0 до 9:</label>
+        <input type="number" id="digit" placeholder="Ваше число">
+        <button type="button" onclick="getSpecialCharacter()">Показати спецсимвол</button>
+        <p id="result-spec">Відповідь:</p>
+    </div>
+    <div class="container">
+        <h2>Сума в заданому діапозоні</h2>
+        <label for="start">Введіть початкове число:</label>
+        <input type="number" id="start" placeholder="Початкове число">
+        <br><br>
+        <label for="end">Введіть кінцеве число:</label>
+        <input type="number" id="end" placeholder="Кінцеве число">
+        <br><br>
+        <button type="button" onclick="calculateSum()">Розрахувати суму</button>
+        <p id="result-range">Відповідь:</p>
+    </div>
+    <div class="containeer">
+        <h2>Знайдіть найбільший спільний дільник</h2>
+        <label for="num1">Введіть перше число:</label>
+        <input type="number" id="num1" placeholder="Перше число">
+        <br><br>
+        <label for="num2">Введіть друге число:</label>
+        <input type="number" id="num2" placeholder="Друге число">
+        <br><br>
+        <button type="button" onclick="findGCD()">Знайти</button>
+        <p id="result-gcd">Відповідь:</p>
+    </div>
+    <div class="container">
+        
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
