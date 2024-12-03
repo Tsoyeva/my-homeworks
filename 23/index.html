@@ -43,8 +43,28 @@
         <p id="result-gcd">Відповідь:</p>
     </div>
     <div class="container">
-        
+        <h2>Перевірте, чи є число паліндромом</h2>
+        <label for="number">Введіть п’ятизначне число:</label>
+        <input type="number" id="number" placeholder="Введіть число">
+        <br><br>
+        <button type="button" onclick="checkPalindrome()">Перевірити</button>
+        <p id="result-palindrome"></p>
     </div>
+    <div class="container">
+        <h2>Розрахунок суми до оплати зі знижкою</h2>
+        <label for="amount">Введіть суму покупки:</label>
+        <input type="number" id="amount" placeholder="Сума покупки">
+        <br><br>
+        <button type="button" onclick="calculateDiscount()">Розрахувати</button>
+        <p id="result-discount"></p>
+    </div>
+    <div class="">
+        <h2>Аналіз чисел</h2>
+        <p>Введіть 10 чисел, і ми порахуємо статистику:</p>
+        <button onclick="analyzeNumbers()">Почати</button>
+        <p id="result-stat"></p>
+    </div>
+
     <script src="./assets/js/main.js"></script>
 </body>
 </html>
