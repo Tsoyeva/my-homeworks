@@ -191,3 +191,55 @@ function analyzeNumbers() {
                 Непарних чисел: ${oddCount}
             `;
 }
+
+function showDays() {
+    let day = 1; 
+
+    while (true) {
+        let dayName;
+
+        switch (day) {
+            case 1: dayName = "Понеділок"; break;
+            case 2: dayName = "Вівторок"; break;
+            case 3: dayName = "Середа"; break;
+            case 4: dayName = "Четвер"; break;
+            case 5: dayName = "П'ятниця"; break;
+            case 6: dayName = "Субота"; break;
+            case 7: dayName = "Неділя"; break;
+        }
+
+        if (!confirm(`${dayName}. Хочеш побачити наступний день?`)) {
+            alert("Дякую! Гарного дня!");
+            break;
+        }
+
+        day = day === 7 ? 1 : day + 1; 
+    }
+}
+
+function guessNumber() {
+    let min = 0; 
+    let max = 100; 
+    let guess; 
+
+    alert("Загадайте число від 0 до 100. Ми його вгадаємо!");
+
+    while (true) {
+        guess = Math.floor((min + max) / 2);
+
+        const response = prompt(
+            `Ваше число > ${guess}, < ${guess} або == ${guess}? (введіть >, < або ==)`
+        );
+
+        if (response === ">") {
+            min = guess + 1;
+        } else if (response === "<") {
+            max = guess - 1;
+        } else if (response === "==") {
+            alert(`Ваше число ${guess}!`);
+            break;
+        } else {
+            alert("Будь ласка, введіть коректну відповідь: >, < або ==");
+        }
+    }
+}

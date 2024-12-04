@@ -171,3 +171,71 @@ function analyzeNumbers() {
 
   document.getElementById("result-stat").innerText = "\n                \u0421\u0442\u0430\u0442\u0438\u0441\u0442\u0438\u043A\u0430:\n                \u0414\u043E\u0434\u0430\u0442\u043D\u0456\u0445 \u0447\u0438\u0441\u0435\u043B: ".concat(positiveCount, "\n                \u0412\u0456\u0434'\u0454\u043C\u043D\u0438\u0445 \u0447\u0438\u0441\u0435\u043B: ").concat(negativeCount, "\n                \u041D\u0443\u043B\u0456\u0432: ").concat(zeroCount, "\n                \u041F\u0430\u0440\u043D\u0438\u0445 \u0447\u0438\u0441\u0435\u043B: ").concat(evenCount, "\n                \u041D\u0435\u043F\u0430\u0440\u043D\u0438\u0445 \u0447\u0438\u0441\u0435\u043B: ").concat(oddCount, "\n            ");
 }
+
+function showDays() {
+  var day = 1;
+
+  while (true) {
+    var dayName = void 0;
+
+    switch (day) {
+      case 1:
+        dayName = "Понеділок";
+        break;
+
+      case 2:
+        dayName = "Вівторок";
+        break;
+
+      case 3:
+        dayName = "Середа";
+        break;
+
+      case 4:
+        dayName = "Четвер";
+        break;
+
+      case 5:
+        dayName = "П'ятниця";
+        break;
+
+      case 6:
+        dayName = "Субота";
+        break;
+
+      case 7:
+        dayName = "Неділя";
+        break;
+    }
+
+    if (!confirm("".concat(dayName, ". \u0425\u043E\u0447\u0435\u0448 \u043F\u043E\u0431\u0430\u0447\u0438\u0442\u0438 \u043D\u0430\u0441\u0442\u0443\u043F\u043D\u0438\u0439 \u0434\u0435\u043D\u044C?"))) {
+      alert("Дякую! Гарного дня!");
+      break;
+    }
+
+    day = day === 7 ? 1 : day + 1;
+  }
+}
+
+function guessNumber() {
+  var min = 0;
+  var max = 100;
+  var guess;
+  alert("Загадайте число від 0 до 100. Ми його вгадаємо!");
+
+  while (true) {
+    guess = Math.floor((min + max) / 2);
+    var response = prompt("\u0412\u0430\u0448\u0435 \u0447\u0438\u0441\u043B\u043E > ".concat(guess, ", < ").concat(guess, " \u0430\u0431\u043E == ").concat(guess, "? (\u0432\u0432\u0435\u0434\u0456\u0442\u044C >, < \u0430\u0431\u043E ==)"));
+
+    if (response === ">") {
+      min = guess + 1;
+    } else if (response === "<") {
+      max = guess - 1;
+    } else if (response === "==") {
+      alert("\u0412\u0430\u0448\u0435 \u0447\u0438\u0441\u043B\u043E ".concat(guess, "!"));
+      break;
+    } else {
+      alert("Будь ласка, введіть коректну відповідь: >, < або ==");
+    }
+  }
+}
