@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h2>Інформація про автомобіль</h2>
+            <button id="show-info">Показати інформацію</button>
+            <div id="car-info"></div>        
+        </div>
+        <div class="container">
+            <h2>Робота з об'єктом часу</h2>
+            <button onclick="showTime()">Показати час</button>
+            <button onclick="addSeconds()">Додати секунди</button>
+            <button onclick="addMinutes()">Додати хвилини</button>
+            <button onclick="addHours()">Додати години</button>
+            <p id="time-display">Поточний час: 00:00:00</p>
+        </div>
+        <div class="container">
+            <h2>Операції з дробами</h2>
+
+            <label for="numerator1">Чисельник 1:</label>
+            <input type="number" id="numerator1" placeholder="Введіть чисельник 1">
+            <br><br>
+
+            <label for="denominator1">Знаменник 1:</label>
+            <input type="number" id="denominator1" placeholder="Введіть знаменник 1">
+            <br><br>
+
+            <label for="numerator2">Чисельник 2:</label>
+            <input type="number" id="numerator2" placeholder="Введіть чисельник 2">
+            <br><br>
+
+            <label for="denominator2">Знаменник 2:</label>
+            <input type="number" id="denominator2" placeholder="Введіть знаменник 2">
+            <br><br>
+
+            <button onclick="performOperation('add')">Додати</button>
+            <button onclick="performOperation('subtract')">Відняти</button>
+            <button onclick="performOperation('multiply')">Множити</button>
+            <button onclick="performOperation('divide')">Ділити</button>
+
+            <h3>Результат:</h3>
+            <p id="result">Результат з'явиться тут</p>
+        </div>
+    </main>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
