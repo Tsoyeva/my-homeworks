@@ -53,3 +53,4 @@ function calculateInvest() {
     document.getElementById("result-bank").innerText =
     `Сума нарахованих відсотків за 2 місяці: ${invest} грн.`;
 } 
+

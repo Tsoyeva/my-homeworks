@@ -93,91 +93,94 @@ function addHours() {
   }
 }
 
-var fraction = {
-  numerator: 1,
-  denominator: 1,
-  set: function set(numerator, denominator) {
-    this.numerator = numerator;
-    this.denominator = denominator;
-  },
-  reduce: function reduce() {
-    var gcd = function gcd(a, b) {
-      while (b) {
-        var temp = b;
-        b = a % b;
-        a = temp;
-      }
+function calcFraction(operator, fisrtNumerator, firstDenumenator, secondNumerator, secondDenumerator) {
+  var firstFraction = {
+    numerator: fisrtNumerator,
+    denumerator: firstDenumenator
+  };
+  var secondFraction = {
+    numerator: secondNumerator,
+    denumerator: secondDenumerator
+  };
 
-      return Math.abs(a);
+  if (operator === '+') {
+    if (firstDenumenator !== secondDenumerator) {
+      var commonDenumerator = getCommonDenumerator(firstDenumenator, secondDenumerator);
+      return {
+        numerator: firstFraction.numerator + secondFraction.numerator,
+        denumenator: commonDenumerator
+      };
+    }
+
+    return {
+      numerator: firstFraction.numerator + secondFraction.numerator,
+      denumenator: firstFraction.denumerator
     };
+  } else if (operator === '-') {
+    if (firstDenumenator !== secondDenumerator) {
+      var _commonDenumerator = getCommonDenumerator(firstDenumenator, secondDenumerator);
 
-    var divisor = gcd(this.numerator, this.denominator);
-    this.numerator /= divisor;
-    this.denominator /= divisor;
-  },
-  add: function add(n2, d2) {
-    var newNumerator = this.numerator * d2 + n2 * this.denominator;
-    var newDenominator = this.denominator * d2;
-    this.set(newNumerator, newDenominator);
-    this.reduce();
-  },
-  subtract: function subtract(n2, d2) {
-    var newNumerator = this.numerator * d2 - n2 * this.denominator;
-    var newDenominator = this.denominator * d2;
-    this.set(newNumerator, newDenominator);
-    this.reduce();
-  },
-  multiply: function multiply(n2, d2) {
-    var newNumerator = this.numerator * n2;
-    var newDenominator = this.denominator * d2;
-    this.set(newNumerator, newDenominator);
-    this.reduce();
-  },
-  divide: function divide(n2, d2) {
-    var newNumerator = this.numerator * d2;
-    var newDenominator = this.denominator * n2;
-    this.set(newNumerator, newDenominator);
-    this.reduce();
-  },
-  toString: function toString() {
-    return "".concat(this.numerator, "/").concat(this.denominator);
+      return {
+        numerator: firstFraction.numerator - secondFraction.numerator,
+        denumenator: _commonDenumerator
+      };
+    }
+
+    return {
+      numerator: firstFraction.numerator - secondFraction.numerator,
+      denumenator: firstFraction.denumerator
+    };
+  } else if (operator === '/') {
+    return {
+      numerator: firstFraction.numerator * secondFraction.denumerator,
+      denumenator: firstFraction.denumerator * secondFraction.numerator
+    };
+  } else if (operator === '*') {
+    return {
+      numerator: firstFraction.numerator * secondFraction.numerator,
+      denumenator: firstFraction.denumerator * secondFraction.denumerator
+    };
   }
-};
+}
+
+function getCommonDenumerator(firstDenumenator, secondDenumerator) {
+  if (firstDenumenator > secondDenumerator) {
+    var rest = firstDenumenator % secondDenumerator;
+    var second = secondDenumerator;
+
+    while (rest > 0) {
+      var temporary = rest;
+      rest = second % rest;
+      second = temporary;
+    }
+
+    return firstDenumenator * secondDenumerator / second;
+  } else {
+    var _rest = secondDenumerator % firstDenumenator;
+
+    var _second = firstDenumenator;
+
+    while (_rest > 0) {
+      var _temporary = _rest;
+      _rest = _second % _rest;
+      _second = _temporary;
+    }
+
+    return firstDenumenator * secondDenumerator / _second;
+  }
+}
 
 function performOperation(operation) {
-  var numerator1 = parseInt(document.getElementById("numerator1").value);
-  var denominator1 = parseInt(document.getElementById("denominator1").value);
-  var numerator2 = parseInt(document.getElementById("numerator2").value);
-  var denominator2 = parseInt(document.getElementById("denominator2").value);
+  var numerator1 = parseInt(document.getElementById("fisrtNumerator").value);
+  var denominator1 = parseInt(document.getElementById("firstDenumenator").value);
+  var numerator2 = parseInt(document.getElementById("secondNumerator").value);
+  var denominator2 = parseInt(document.getElementById("secondDenumerator").value);
 
   if (isNaN(numerator1) || isNaN(denominator1) || isNaN(numerator2) || isNaN(denominator2) || denominator1 === 0 || denominator2 === 0) {
     document.getElementById("result").innerText = "Введіть коректні числа (знаменники не повинні дорівнювати нулю).";
     return;
   }
 
-  fraction.set(numerator1, denominator1);
-
-  switch (operation) {
-    case 'add':
-      fraction.add(numerator2, denominator2);
-      break;
-
-    case 'subtract':
-      fraction.subtract(numerator2, denominator2);
-      break;
-
-    case 'multiply':
-      fraction.multiply(numerator2, denominator2);
-      break;
-
-    case 'divide':
-      fraction.divide(numerator2, denominator2);
-      break;
-
-    default:
-      document.getElementById("result").innerText = "Невідома операція.";
-      return;
-  }
-
-  document.getElementById("result").innerText = "\u0420\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442: ".concat(fraction.toString());
+  var result = calcFraction(operation, numerator1, denominator1, numerator2, denominator2);
+  document.getElementById("result").innerText = "\u0420\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442: ".concat(result.numerator, "/").concat(result.denumenator);
 }
