@@ -63,16 +63,34 @@ function checkAndAddToCart() {
     }
   }
 
+  var msg = addToCart(title, price, qty) === 'added' ? 'Product added succesfully' : 'Product uptade successfuly';
+  alert(msg);
   addToCart(title, price, qty);
   alert('Product added succesfully');
   document.getElementById('prodTitle').value = '';
   document.getElementById('prodPrice').value = '';
   document.getElementById('prodQty').valueAsNumber = 1;
+  showProductList();
 }
 
 function showProductList() {
+  var cartTotal = CART.reduce(function (acc, el) {
+    return acc + el.price * el.qty;
+  }, 0);
   var list = '';
-  CART.forEach(function (product) {
-    list += "<tr>\n            <td>".concat(product.title, "</td>\n            <td>").concat(product.price, "</td>\n            <td>").concat(product.qty, "</td>\n            <td>").concat(product.isBuy, "</td>\n        </tr>");
+  var total = 0;
+  CART.forEach(function (prod, index) {
+    total += prod.price * prod.qty;
+    list += "<tr>\n            <td>".concat(index + 1, "</td>\n            <td>").concat(prod.isBuy ? '<span class="badge bg-success">Yes</span>' : '<span class="badge bg-danger">No</span>', "</td>\n            <td>").concat(product.price.toFixed(2), "</td>\n            <td>").concat(product.qty, "</td>\n            <td>").concat((prod.price * prod.qty).toFixed(2), "</td>\n            <td><button type=\"button\" class=\"btn-danger\" onclick=\"deleteProduct(").concat(index, ")\">Delete</button></td>\n        </tr>");
   });
+
+  function deleteProduct(index) {
+    if (confirm("Do you want to delete product?")) {
+      CART.splice(index, 1);
+      showProductList();
+    }
+  }
+
+  document.getElementById(cartTotal).innerText = cartTotal.toFixed(2);
+  document.getElementById('product_list').innerHTML = list;
 }

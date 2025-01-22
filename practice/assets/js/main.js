@@ -62,25 +62,48 @@ function checkAndAddToCart () {
         }
     }
 
+    const msg = addToCart(title, price, qty) === 'added' 
+     ? 'Product added succesfully'
+     : 'Product uptade successfuly'
+    alert (msg)
+    
+
     addToCart(title, price, qty)
     alert ('Product added succesfully')
 
     document.getElementById('prodTitle').value =''
     document.getElementById('prodPrice').value =''
     document.getElementById('prodQty').valueAsNumber = 1
-    
+    showProductList()
 
 }
 
 function showProductList() {
-    let list = '';
+    const cartTotal = CART.reduce((acc, el) => acc + el.price * el.qty, 0)
 
-    CART.forEach(product => {
+    let list = '';
+    let total = 0;
+
+    CART.forEach((prod, index) => {
+        total += prod.price * prod.qty
         list += `<tr>
-            <td>${product.title}</td>
-            <td>${product.price}</td>
+            <td>${index + 1}</td>
+            <td>${prod.isBuy ? '<span class="badge bg-success">Yes</span>' :'<span class="badge bg-danger">No</span>'}</td>
+            <td>${product.price.toFixed(2)}</td>
             <td>${product.qty}</td>
-            <td>${product.isBuy}</td>
+            <td>${(prod.price * prod.qty).toFixed(2)}</td>
+            <td><button type="button" class="btn-danger" onclick="deleteProduct(${index})">Delete</button></td>
         </tr>`
     })
+
+    function deleteProduct(index) {
+       if (confirm(`Do you want to delete product ${}?`)) {
+        CART.splice(index, 1)
+        showProductList()
+       }
+    }
+
+    document.getElementById(cartTotal).innerText = cartTotal.toFixed(2) 
+    document.getElementById('product_list').innerHTML = list
+    
 }
