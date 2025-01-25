@@ -92,9 +92,17 @@ function showProductList() {
             <td>${product.price.toFixed(2)}</td>
             <td>${product.qty}</td>
             <td>${(prod.price * prod.qty).toFixed(2)}</td>
-            <td><button type="button" class="btn-danger" onclick="deleteProduct(${index})">Delete</button></td>
+            <td>
+            prod.isBuy <button type="button" class="btn btn-success" onclick="buyProduct(${index})">Buy</button>
+            <button type="button" class="btn-danger" onclick="deleteProduct(${index})">Delete</button></td>
         </tr>`
     })
+
+    function buyProduct(index) {
+         (CART[index].isBuy) = true
+         showProductList() 
+    }
+
 
     function deleteProduct(index) {
        if (confirm(`Do you want to delete product ${}?`)) {
@@ -102,6 +110,14 @@ function showProductList() {
         showProductList()
        }
     }
+
+    showProductList()
+    const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    const sum = arr.reduceRight((acc, el) => {
+        console.log(acc, el);
+        return acc + el
+        }, 0)
+        console.log('sum = ' + sum)
 
     document.getElementById(cartTotal).innerText = cartTotal.toFixed(2) 
     document.getElementById('product_list').innerHTML = list

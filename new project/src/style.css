@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    line-height: 1;
+    font-family: Montserrat;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+ul {
+    list-style: none;
+
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    padding: 53px 0;
+  }
+
+.header .logo {
+    max-width: 240px;
+  }
+
+.header .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+.nav-item {
+    position: relative;
+    padding: 0 70px 0 0;
+  }
+
+  .nav-list {
+    display: flex;
+    color: #fff;
+  }
+
+  .nav-link {
+    color: #fff;
+    font-family: "Source Sans Pro";
+    font-size: 14px;
+  }
+
+  .nav-item:hover .nav-link::before {
+    content: "";
+    top: 3px;
+    left: -14px;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: white;
+  }
+
+  .nav-item:before {
+    content: "";
+    top: 3px;
+    left: -14px;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+
+  .social-header-item {
+    padding: 0 20px;
+  }
+
+  .social__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+}
+   .social__link {
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 11px 15px;
+    font-size: 18px;
+  } 
+  
+  .hero-section {
+    padding: 223px 0 50px;
+  }
+  
+  .hero-title {
+    margin: 0;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 8px;
+    color: #fff;
+    text-align: center;
+    padding: 0 0 20px;
+  }
+
+  .title-subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding: 0 0 240px;
+  }
+
+  .scroll-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .scroll-btn {
+    display: block;
+    width: 17px;
+    height: 17px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(-45deg);
+  }
+  
+  .about .title-holder {
+    padding-top: 30px;
+    margin-bottom: 89px;
+  }
+  .about .card {
+    padding-top: 57px;
+    margin-bottom: 140px;
+  }
+  
+  .about .card .img-holder {
+    width: 55%;
+  }
+  .img-holder 
+    {
+      position: relative; 
+      display: inline-block; 
+    }
+  
+  .img-holder:first-child::before {
+    content: ''; /* Добавляем псевдоэлемент */
+    position: absolute; /* Абсолютное позиционирование внутри родителя */
+    top: -60px;
+    right: -80px; /* Смещение вправо, чтобы создать эффект за изображением */
+    width: 630px;
+    height: 470px;
+    background-color: #55B7FF; /* Цвет фона квадрата */
+    z-index: -1; /* Псевдоэлемент позади изображения */
+  }
+
+  .img-holder:last-child::before {
+    content: ''; /* Добавляем псевдоэлемент */
+    position: absolute; /* Абсолютное позиционирование внутри родителя */
+    top: -60px;
+    right: -80px; /* Смещение вправо, чтобы создать эффект за изображением */
+    width: 630px;
+    height: 470px;
+    background-color: #55B7FF; /* Цвет фона квадрата */
+    z-index: -1; /* Псевдоэлемент позади изображения */
+  }
+  
+  .about .card .text-holder {
+    width: 45%;
+    padding: 60px 0 0 70px;
+  }
+
+  .about .card .text-holder .card-title {
+    margin-bottom: 19px;
+  }
+  
+  .about .card .text-holder .card-text {
+    line-height: 30px;
+    margin-bottom: 41px;
+  }
+
+  .about .card .text-holder .btn {
+    display: block;
+    max-width: 200px;
+    padding: 16px 41px;
+    margin-bottom: 60px;
+    transition: all ease-in-out 0.3s;
+  }
+
+  .about .card .text-holder .map-link {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    color: #000;
+    transition: all ease-in-out 0.3s;
+  }
+  .about .card .text-holder .map-link:hover {
+    color: #55B7FF;
+  }
