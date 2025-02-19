@@ -309,8 +309,8 @@ nav ul li a {
 }
 @media (max-width: 1024px) {
     .slider-container {
-        width: 90%; 
-        height: 350px; 
+        width: 70%; 
+        height: auto; 
     }
 
     .slider-btn {
@@ -323,7 +323,7 @@ nav ul li a {
 @media (max-width: 768px) {
     .slider-container {
         width: 100%;
-        height: 300px;
+        height: auto;
     }
 
     .slider-btn {
@@ -335,13 +335,14 @@ nav ul li a {
 
 @media (max-width: 480px) {
     .slider-container {
-        height: 350px; 
+        height: auto; 
+        width: 60%;
     }
 
     .slider-btn {
-        width: 25px;
-        height: 25px;
-        font-size: 14px;
+        width: 15px;
+        height: 15px;
+        font-size: 12px;
     }
 }
 
