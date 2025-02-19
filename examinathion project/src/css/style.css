@@ -309,7 +309,7 @@ nav ul li a {
 }
 @media (max-width: 1024px) {
     .slider-container {
-        width: 70%; 
+        width: 65%; 
         height: auto; 
     }
 
@@ -322,7 +322,7 @@ nav ul li a {
 
 @media (max-width: 768px) {
     .slider-container {
-        width: 50%;
+        width: 100%;
         height: auto;
     }
     .slider-track {
@@ -373,6 +373,18 @@ nav ul li a {
     color: #666;
     margin: 0 auto;
     font-size: 1.1rem;
+}
+
+#learn {
+    text-align: center;
+    padding: 50px 20px;
+    color: #666;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    background: url(../img/school_bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
 }
 
 footer {
