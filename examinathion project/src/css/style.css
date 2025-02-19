@@ -244,8 +244,17 @@ nav ul li a {
 .slider-text {
     flex: 1;
     padding-right: 50px;
+    
 }
 
+.slider-text h2 {
+    padding-bottom: 20px;
+}
+
+.slider-text p {
+    padding-top: 10px;
+    letter-spacing: 2px;
+}
 .slider-container {
     position: relative;
     width: 500px;
