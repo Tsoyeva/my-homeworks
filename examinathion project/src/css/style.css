@@ -145,7 +145,7 @@ nav ul li a {
 
 .cta-button {
     display: inline-block;
-    background: #ffc107;
+    background: #708e54;
     color: #f8f8f8;
     padding: 15px 25px;
     font-size: 1.2rem;
@@ -156,7 +156,7 @@ nav ul li a {
 }
 
 .cta-button:hover {
-    background: #a88a04;
+    background: #47761d;
 }
 
 #welcome {
@@ -180,7 +180,10 @@ nav ul li a {
 .products {
     text-align: center;
     padding: 50px 20px;
-    background: rgba(118, 115, 115, 0.2);
+    background-image: url(../img/school_bg.webp);
+    background-size: cover;  
+    background-position: center; 
+    background-repeat: no-repeat;
 }
 
 .product-grid {
@@ -213,7 +216,7 @@ nav ul li a {
 
 
 .info-btn {
-    background: #c7a40a;
+    background: #708e54;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -224,84 +227,65 @@ nav ul li a {
 }
 
 .info-btn:hover {
-    background: #ffc107;
+    background: #47761d;
 }
 
 .slider-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 50px;
-    background: rgba(118, 115, 115, 0.2);
+    padding: 50px 20px;
+    height: 600px;
+    background-image: url(../img/school_bg.webp);
+    background-size: cover;  
+    background-repeat: no-repeat;
 }
 
-.slider-content {
-    width: 45%;
-    text-align: left;
-}
-
-.slider-content h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.slider-content p {
-    font-size: 1.2rem;
-    color: #555;
-}
-
-.slider-wrapper {
-    width: 45%;
-    display: flex;
-    align-items: center;
-    position: relative;
+.slider-text {
+    flex: 1;
+    padding-right: 50px;
 }
 
 .slider-container {
-    width: 100%;
+    position: relative;
+    width: 500px;
     height: 400px;
     overflow: hidden;
-    position: relative;
+    border-radius: 10px;
 }
 
-
-.slider {
+.slider-track {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
 
-
 .slide {
     min-width: 100%;
     height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .slide img {
     width: 100%;
-    height: 400px;
+    height: 100%;
     object-fit: cover;
     border-radius: 10px;
 }
 
-button {
+.prev, .next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(113, 112, 112, 0.4); 
-    color: white;
-    border: none;
-    border-radius: 50%;
     width: 40px;
     height: 40px;
-    font-size: 20px;
+    background: rgba(88, 87, 87, 0.5);
+    color: white;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: background 0.3s, transform 0.2s;
+    border: none;
+    z-index: 10;
 }
 
 .prev {
@@ -312,11 +296,61 @@ button {
     right: 10px;
 }
 
-button:hover {
-    background: rgba(0, 0, 0, 0.7);
-    transform: translateY(-50%) scale(1.1);
+.prev:hover, .next:hover {
+    background: rgba(84, 83, 83, 0.8);
+}
+@media (max-width: 1024px) {
+    .slider-container {
+        width: 90%; 
+        height: 350px; 
+    }
+
+    .slider-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
 }
 
+@media (max-width: 768px) {
+    .slider-container {
+        width: 100%;
+        height: 300px;
+    }
+
+    .slider-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .slider-container {
+        height: 250px; 
+    }
+
+    .slider-btn {
+        width: 25px;
+        height: 25px;
+        font-size: 14px;
+    }
+}
+
+.hamburger {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 1000;
+}
+
+#blckq {
+    text-align: center;
+    padding: 50px 20px;
+    color: #666;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
 
 footer {
     text-align: center;
