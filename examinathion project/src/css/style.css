@@ -335,7 +335,7 @@ nav ul li a {
 
 @media (max-width: 480px) {
     .slider-container {
-        height: 250px; 
+        height: 350px; 
     }
 
     .slider-btn {
