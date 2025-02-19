@@ -322,8 +322,22 @@ nav ul li a {
 
 @media (max-width: 768px) {
     .slider-container {
-        width: 100%;
+        width: 50%;
         height: auto;
+    }
+    .slider-track {
+         
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-280px);
+            }
+        }
+        
+        .element {
+            animation: slide 1s ease-in-out forwards;
+        
     }
 
     .slider-btn {
