@@ -202,13 +202,14 @@ nav ul li a {
     width: 350px;
 }
 .products h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin: 15px 0;
+    letter-spacing: 1px;
 }
 
-.product p {
+.products p {
+    color: #434141;
     font-size: 1rem;
-    letter-spacing: 10px;
 }
 
 .product-card img {
@@ -249,6 +250,7 @@ nav ul li a {
     flex: 1;
     padding-right: 50px;
     
+    
 }
 
 .slider-text h2 {
@@ -257,6 +259,7 @@ nav ul li a {
 
 .slider-text p {
     padding-top: 10px;
+    color: #434141;
 }
 .slider-container {
     position: relative;
@@ -392,6 +395,10 @@ nav ul li a {
     background-size: cover;
     background-position: top;
 }
+    #learn h2 {
+        color: black;
+        margin-bottom: 20px;
+    }
 
 footer {
     text-align: center;
