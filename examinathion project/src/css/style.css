@@ -162,6 +162,7 @@ nav ul li a {
 #welcome {
     text-align: center;
     padding: 50px 20px;
+    background: url(../img/bg_img.webp);
     
 }
 
@@ -180,11 +181,13 @@ nav ul li a {
 .products {
     text-align: center;
     padding: 50px 20px;
+    background: rgb(220, 216, 212);
     background-image: url(../img/school_bg.webp);
     background-size: cover;  
     background-position: center; 
     background-repeat: no-repeat;
 }
+
 
 .product-grid {
     display: flex;
@@ -236,6 +239,7 @@ nav ul li a {
     justify-content: space-between;
     padding: 50px 20px;
     height: 600px;
+    background: rgb(220, 216, 212);
     background-image: url(../img/school_bg.webp);
     background-size: cover;  
     background-repeat: no-repeat;
@@ -373,6 +377,7 @@ nav ul li a {
     color: #666;
     margin: 0 auto;
     font-size: 1.1rem;
+    background: rgb(220, 216, 212);
 }
 
 #learn {
@@ -381,7 +386,8 @@ nav ul li a {
     color: #666;
     margin: 0 auto;
     font-size: 1.1rem;
-    background: url(../img/school_bg.webp);
+    background: rgb(220, 216, 212);
+    background-image: url(../img/school_bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
