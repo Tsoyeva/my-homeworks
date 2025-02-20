@@ -246,13 +246,6 @@ nav ul li a {
     background-repeat: no-repeat;
 }
 
-/* .slider-text {
-    flex: 1;
-    padding-right: 50px;
-    
-    
-} */
-
 .slider-text h2 {
     padding-bottom: 20px;
 }
@@ -361,7 +354,7 @@ nav ul li a {
     }
     .slider-text {
         width: 50%;
-        height: auto;
+        height: 500px;
     }
     .slider-btn {
         width: 15px;
