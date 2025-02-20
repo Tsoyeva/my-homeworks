@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Albert Sans', sans-serif;
-    background-color: #f8f8f8;
+    background: rgb(220, 216, 212);
 }
 
 header {
@@ -239,11 +239,15 @@ nav ul li a {
     align-items: center;
     justify-content: space-between;
     padding: 50px 20px;
-    height: 600px;
+    height: 800px;
     background: rgb(220, 216, 212);
     background-image: url(../img/school_bg.webp);
     background-size: cover;  
     background-repeat: no-repeat;
+}
+
+.slider-text {
+    max-width: 50%;
 }
 
 .slider-text h2 {
@@ -394,6 +398,7 @@ nav ul li a {
     #learn h2 {
         color: black;
         margin-bottom: 20px;
+        margin-top: 20px;
     }
 
 footer {
