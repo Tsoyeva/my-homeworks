@@ -241,8 +241,9 @@ nav ul li a {
     padding: 50px 20px;
     height: 800px;
     background: rgb(220, 216, 212);
-    background-image: url(../img/school_bg.webp);
+    background-image: url(../img/lessons_teacher_bg.webp);
     background-size: cover;  
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -389,18 +390,78 @@ nav ul li a {
     color: #666;
     margin: 0 auto;
     font-size: 1.1rem;
-    background: rgb(220, 216, 212);
-    background-image: url(../img/school_bg.webp);
+    background-color: rgb(220, 216, 212);
+    background-image: url(../img/bg_img.webp);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
+    background-position: bottom;
 }
     #learn h2 {
         color: black;
         margin-bottom: 20px;
         margin-top: 20px;
     }
-
+    #online {
+        text-align: center;
+        padding: 50px 20px;
+        background: url(../img/lessons_teacher_bg.webp);
+        background-repeat: no-repeat;
+        background-size: cover; 
+        background-position: top;
+    }
+    
+    #online h2 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+    
+    #online p {
+        color: #666;
+        max-width: 800px;
+        margin: 0 auto;
+        font-size: 1.1rem;
+    }
+    #online .container {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .icon-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 30px; 
+        justify-content: center;
+        padding: 40px;
+    }
+    
+    .card-icon:hover {
+        transform: translateY(-8px);
+    }
+    
+    .card-icon span {
+        font-size: 40px; 
+        color: #333; 
+        display: block;
+        margin-bottom: 15px;
+    }
+    
+    .card-icon-title {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+        color: #333;
+    }
+    
+    .card-icon-text {
+        font-size: 1rem;
+        color: #666;
+    }
+    
+    @media (max-width: 768px) {
+        .icon-row {
+            grid-template-columns: 1fr; 
+        }
+        
+    }
 footer {
     text-align: center;
     padding: 20px;

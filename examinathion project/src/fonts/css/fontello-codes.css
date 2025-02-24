@@ -1,0 +1,8 @@
+
+.icon-heart-empty:before { content: '\e800'; } /* '' */
+.icon-mail:before { content: '\e801'; } /* '' */
+.icon-credit-card:before { content: '\e802'; } /* '' */
+.icon-emo-wink2:before { content: '\e813'; } /* '' */
+.icon-users:before { content: '\f064'; } /* '' */
+.icon-paper-plane-empty:before { content: '\f1d9'; } /* '' */
+.icon-birthday:before { content: '\f1fd'; } /* '' */
