@@ -9,6 +9,12 @@ body {
     background: rgb(220, 216, 212);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
 header {
     position: fixed;
     top: 0;
@@ -194,12 +200,16 @@ nav ul li a {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    align-items: stretch;
 }
 
 .product-card {
+    display: flex;
+    flex-direction: column;
     padding: 20px;
     text-align: center;
     width: 350px;
+    justify-content: space-between;
 }
 .products h3 {
     font-size: 1.2rem;
