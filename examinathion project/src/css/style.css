@@ -380,7 +380,7 @@ nav ul li a {
 
 .hamburger {
     position: absolute;
-    top: 15px;
+    /* top: 15px; */
     right: 20px;
     z-index: 1000;
 }
