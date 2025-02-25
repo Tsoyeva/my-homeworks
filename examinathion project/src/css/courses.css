@@ -105,3 +105,77 @@ body {
         margin-top: 15px; 
     }
 }
+
+#image-text-grid {
+    width: 100%;
+    padding: 50px 0;
+    background: url(../img/school_bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.grid-item img {
+    width: 45%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.text-block {
+    width: 45%;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.text-block h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+
+}
+
+.text-block p {
+    font-size: 1.2rem;
+    color: #434141;
+}
+
+
+.reverse {
+    flex-direction: row;
+}
+
+@media (max-width: 768px) {
+    .grid-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .grid-item img, .text-block {
+        width: 100%;
+    }
+
+    .grid-item.reverse {
+        flex-direction: column-reverse;
+    }
+    .text-block {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+
+
+
