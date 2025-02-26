@@ -274,19 +274,20 @@ body {
 #breakfasts {
     width: 100%;
     padding: 50px 0;
-    background: url(../img/school_bg.webp);
+    background: url(../img/lessons_teacher_bg.webp);
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: top;
     text-align: center;
+    height: 800px;
 }
-#breakfasts {
+/* #breakfasts {
     width: 100%;
     padding: 50px 0;
     background: url(../img/lessons_teacher_bg.webp) no-repeat bottom top / cover;
     text-align: center;
     position: relative;
-}
+} */
 .container-breakfast {
     max-width: 1200px;
     margin: auto;
@@ -295,6 +296,7 @@ body {
     justify-content: space-between;
     gap: 40px;
     padding: 0 20px;
+    margin-top: 100px;
 }
 
 .text-b {
@@ -318,7 +320,7 @@ body {
     width: 50%;
     max-width: 500px;
     height: auto;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
 .breakfast-btn {
         display: inline-block;
@@ -368,5 +370,6 @@ body {
         margin-top: 15px; 
     }
 } 
+
 
 
