@@ -99,7 +99,7 @@ body {
         margin-right: 20px;
     }
 
-    .course .btn {
+    .course-btn {
         font-size: 16px; 
         padding: 10px 20px;
         margin-top: 15px; 
@@ -187,21 +187,24 @@ body {
     box-sizing: border-box;
 }
 
-.text-block {
+.text-bl {
     text-align: center;
-    /* color: white; */
     margin-bottom: 20px;
 }
 
-.text-block h2 {
+.text-bl h2 {
     font-size: 2.5rem;
     margin-bottom: 10px;
 }
 
-.text-block p {
+.text-bl p {
     font-size: 1.2rem;
     max-width: 600px;
     margin: 0 auto;
+}
+
+#horizontal-slider-section {
+    background: url(../img/bg_img.webp);
 }
 
 .slider-container {
@@ -259,13 +262,111 @@ body {
         max-height: 70vh;
     }
 
-    .text-block h2 {
+    .text-bl h2 {
         font-size: 2rem;
     }
 
-    .text-block p {
+    .text-bl p {
         font-size: 1rem;
     }
 }
+
+#breakfasts {
+    width: 100%;
+    padding: 50px 0;
+    background: url(../img/school_bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: top;
+    text-align: center;
+}
+#breakfasts {
+    width: 100%;
+    padding: 50px 0;
+    background: url(../img/lessons_teacher_bg.webp) no-repeat bottom top / cover;
+    text-align: center;
+    position: relative;
+}
+.container-breakfast {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.text-b {
+    width: 50%;
+    text-align: left;
+    
+}
+
+.text-b h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.text-b p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.container-breakfast img {
+    width: 50%;
+    max-width: 500px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.breakfast-btn {
+        display: inline-block;
+        padding: 12px 25px;
+        font-size: 1.2rem;
+        color: white;
+        background: #708e54; 
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background 0.3s ease;
+        align-self: flex-start; 
+        margin-top: 20px;
+    }
+    
+    .breakfast-btn:hover {
+        background: #47761d;
+    }
+
+
+@media (max-width: 768px) {
+    .container-breakfast {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-b {
+        width: 100%;
+        text-align: center;
+    }
+
+    .container-breakfast img {
+        width: 100%;
+        margin-top: -40px;
+    }
+    .text-b h2 {
+        font-size: 2rem;
+    }
+
+    .text-b p {
+        font-size: 1rem;
+    }
+    .breakfast-btn {
+        font-size: 16px; 
+        padding: 10px 20px;
+        margin-top: 15px; 
+    }
+} 
 
 
