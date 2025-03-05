@@ -201,6 +201,7 @@ body {
     font-size: 1.2rem;
     max-width: 600px;
     margin: 0 auto;
+    color: #666;
 }
 
 #horizontal-slider-section {
@@ -281,13 +282,7 @@ body {
     text-align: center;
     height: 800px;
 }
-/* #breakfasts {
-    width: 100%;
-    padding: 50px 0;
-    background: url(../img/lessons_teacher_bg.webp) no-repeat bottom top / cover;
-    text-align: center;
-    position: relative;
-} */
+
 .container-breakfast {
     max-width: 1200px;
     margin: auto;
@@ -371,5 +366,71 @@ body {
     }
 } 
 
+.slider-wrpr {
+    position: relative;
+    width: 45%;
+    overflow: hidden;
+}
 
+.horizontal-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
 
+.slide {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+.grid-items.reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.slide img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(87, 84, 84, 0.5);
+    color: rgb(220, 213, 213);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.prev-btn { left: 10px; }
+.next-btn { right: 10px; }
+
+@media (max-width: 768px) {
+    .grid-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .grid-item img, .text-block {
+        width: 100%;
+    }
+
+    .grid-items.reverse {
+        flex-direction: column;
+        align-items: center;
+    }
+    .text-block {
+        margin-left: 0;
+        text-align: center;
+    }
+    .slide {
+        min-width: 100%;
+        height: 350px;
+        margin-top: 20px;
+    }
+}

@@ -33,3 +33,28 @@ document.addEventListener("DOMContentLoaded", function () {
         updateSlider();
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const sliders = document.querySelectorAll(".horizontal-slider");
+
+    sliders.forEach((slider, i) => {
+        let index = 0;
+        const slides = slider.querySelectorAll(".slide");
+        const totalSlides = slides.length;
+
+        const prevBtn = slider.parentElement.querySelector(".prev-btn");
+        const nextBtn = slider.parentElement.querySelector(".next-btn");
+
+        function showSlide(newIndex) {
+            if (newIndex >= totalSlides) index = 0;
+            else if (newIndex < 0) index = totalSlides - 1;
+            else index = newIndex;
+
+            slider.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        prevBtn.addEventListener("click", () => showSlide(index - 1));
+        nextBtn.addEventListener("click", () => showSlide(index + 1));
+    });
+});

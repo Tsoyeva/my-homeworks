@@ -1,12 +1,11 @@
+
 @font-face {
-    font-family: 'Albert Sans';
+    font-display: swap; 
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    src: local(''),
-         url('../fonts/albert-sans-v1-latin-regular.woff2') format('woff2'), 
-         url('../fonts/albert-sans-v1-latin-regular.woff') format('woff');
-}
-
+    src: url('../fonts/inter-v18-cyrillic_cyrillic-ext_latin-regular.woff2') format('woff2'); 
+  }
 
 
 
