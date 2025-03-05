@@ -119,7 +119,23 @@ const texts = {
     },
     "appetizer text": {
         "en": "This course is for those who want to go beyond just recipes. For beginners and long-time practitioners. For those who want to find themselves in the world of cooking. To find your style, your way and your system. I will give you absolutely all the necessary theoretical basis, which can be easily operated to create your own dishes and optimize processes in the kitchen. But we will also put a big emphasis specifically on training your creative muscle. To not just follow recipes, but to understand them. And create. *suitable for all levels of experience",
-        "ua": "Цей курс для тих, хто хоче піти за межі просто рецептів. Для початківців та досвідчених практиків. Для тих, хто хоче знайти себе у світі приготування їжі. Знайдіть свій стиль, свій шлях та свою систему. Я дам вам абсолютно всю необхідну теоретичну основу, яка може бути легко оперована для створення своїх власних страв та оптимізації процесів на кухні. Але ми також поставимо великий акцент на тренування вашого креативного м ьсця. Щоб не тільки виконувати рецепти, а й розуміти їх. І створювати. *для всіх рівнів досвіду"
+        "ua": "Цей курс для тих, хто хоче вийти за межі просто рецептів. Для початківців та досвідчених практиків. Для тих, хто хоче знайти себе у світі приготування їжі. Знайти свій стиль, свій шлях та систему. Я дам вам абсолютно всю необхідну теоретичну основу, яка може бути легко оперована для створення своїх власних страв та оптимізації процесів на кухні. Але ми також поставимо великий акцент на тренування вашого креативу. Щоб не тільки робити за рецептами, а й розуміти їх. І створювати.   *для всіх рівнів досвіду"
     },
+    "Quick Tasty": {
+        "en": "Quick & Tasty: Mastering Appetizers and Simple Dishes",
+        "ua": "Швидко та Смачно: Опанування Закускок та Простих Страв",
+    },
+    "Quick Tasty text": {
+        "en": "Learn to create delicious and easy appetizers with our online culinary course! From creamy hummus and crispy bruschetta to authentic Italian piadina, you’ll master a variety of simple yet flavorful dishes.  Perfect for casual meals or entertaining guests, these recipes are quick to prepare and packed with taste. With step-by-step guidance and pro tips, you'll gain the confidence to impress with every bite!",
+        "ua": "Навчіться готувати смачні та легкі закуски з нашим онлайн-курсом кулінарії! Від кремового хумусу та хрустких брускет до аутентичної італійської п'ядини, ви опануєте різноманітні прості, але смачні страви. Ідеально для неформальних трапез або розваги гостей, ці рецепти готовляться швидко, але з насиченим смаком. Крок за кроком під моїм кураторством та професійними порадами, ви отримаєте впевненість, щоб вражати з першого шматочку!"
+    },
+    "Quality Ingredients": {
+        "en": "The Power of Quality Ingredients",
+        "ua": "Сила Якісних Інгредієнтів",
+    },
+    "Quality Ingredients text": {
+        "en": "Choosing the right ingredients is the foundation of any great dish. Fresh, high-quality produce, aromatic spices, and well-sourced proteins can elevate even the simplest recipes. Paying attention to seasonality and authenticity ensures richer flavors and better results in your cooking.",
+        "ua": "Вибір правильних інгредієнтів - це фундамент будь-якої великої страви. Свіжі, якісні овочі, ароматні спеції та добре підібрані білки, зможуть піднести навіть прості рецепти. Приділивши увагу сезонності та автентичності, можна забезпечити багатші смаки та кращі результати при приготуванні їжі."
+    }    
 
 }
