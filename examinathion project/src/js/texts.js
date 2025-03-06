@@ -59,7 +59,7 @@ const texts = {
     },
     "Simple Dishes & Appetizers text": {
         "en": "Take your cooking skills to the next level with our online courses on simple dishes and appetizers. Learn to prepare flavorful main courses and delicious starters with expert guidance, step-by-step instructions, and pro tips. Our lessons will help you create impressive and satisfying meals with confidence.",
-        "ua": "Підвищте свої навички приготування з нашими онлайн-курсами з простих страв та закусок! Навчіться готувати смачні основні страви та десерти з експертними порадами, крок за кроком інструкціями та професійними порадами. Наші уроки допоможуть вам створити вражаючі та задовільні страви з впевненістю."
+        "ua": "Підвищте свої навички приготування з нашими онлайн-курсами з простих страв та закусок! Навчіться готувати смачні основні страви та смачні закуски з експертними порадами, покроковими інструкціями та професійними навичками. Наші уроки допоможуть вам створити вражаючі та задовільні страви з впевненістю."
     },
     "Our": {
         "en": "Our Courses",
@@ -71,7 +71,7 @@ const texts = {
     }, 
     "Hello text": {
         "en": "If you are here and reading this text, it means that we are already connected by one beautiful and very delicious common cause. My name is Eva and my love for cooking was intensified by my desire to teach. At first it was just an interesting experience, but it surely grows into something more. I'll try to show you the world of culinary arts from a whole new side. Be prepared!",
-        "ua": "Якщо ви зараз читаєте цей текст, це означає, що ми вже з'єднані однією гарною та дуже смачною спільною метою. Моє ім'я - Єва, і моя любов до приготування посилилася моєю бажанням вчити. Спочатку це було просто цікавим досвідом, але це переросло в щось більше. Я спробую показати вам світ кулінарного мистецтва з нової сторони. Будьте готові!"
+        "ua": "Якщо ви зараз читаєте цей текст, це означає, що ми вже з'єднані однією гарною та дуже смачною спільною метою. Моє ім'я - Єва і любов до приготування їжі посилилась бажанням навчати. Спочатку це було просто цікавим досвідом, але згодом переросло в щось більше. Я спробую показати вам світ кулінарного мистецтва з нової сторони. Будьте готові!"
     },
     "Hero text": {
         "en": "Let's open ourselves to new knowledge and make this world even tastier!",
@@ -136,6 +136,78 @@ const texts = {
     "Quality Ingredients text": {
         "en": "Choosing the right ingredients is the foundation of any great dish. Fresh, high-quality produce, aromatic spices, and well-sourced proteins can elevate even the simplest recipes. Paying attention to seasonality and authenticity ensures richer flavors and better results in your cooking.",
         "ua": "Вибір правильних інгредієнтів - це фундамент будь-якої великої страви. Свіжі, якісні овочі, ароматні спеції та добре підібрані білки, зможуть піднести навіть прості рецепти. Приділивши увагу сезонності та автентичності, можна забезпечити багатші смаки та кращі результати при приготуванні їжі."
-    }    
+    },
+    "Flavor Combinations": {
+        "en": "Mastering Flavor Combinations",
+        "ua": "Опанування Комбінацій Смаку",
+    },
+    "Flavor Combinations text": {
+       "en": "Learning to create unique and exciting flavors is an essential skill in cooking. I'll teach you how to balance sweetness, acidity, saltiness, and bitterness, as well as how to pair ingredients for rich and harmonious taste experiences. With the right techniques, you'll be able to elevate any dish and develop your own signature style." ,
+       "ua": "Навчіться створювати унікальні та захоплюючі смаки - це есенціальна навичка у приготуванні їжі. Я навчу вас, як поєднувати солодкість, кислість, солоненість та гостроту, а також як комбінувати інгредієнти для багатших та гармонійних смакових досвідів. З правильними техніками, ви зможете піднести будь-яку страву та розвинути власний стиль."
+    },
+    "Beautiful Presentation": {
+        "en": "The Art of Beautiful Presentation",
+        "ua": "Мистецтво Красивої Представлення",
+    },
+    "Beautiful Presentation text": {
+        "en": "Cooking is not just about taste—it’s also about how a dish looks on the plate. I’ll teach you how to transform simple ingredients into visually stunning meals, combining colors, textures, and plating techniques. Even with just what’s in your fridge, you’ll learn to create dishes that are as beautiful as they are delicious.",
+        "ua": "Приготування їжі - це не тільки про смак, а й про те, як страва виглядає на тарілці. Я навчу вас, як перетворювати прості інгредієнти на візуально приголомшливі страви, комбінуючи кольори, текстури та техніки подачі. Навіть з лише того, що є у вашому холодильнику, ви навчитеся створювати страви, які є настільки ж вражаючими, як і смачними."
+    },
+    "Cooking Made Simple": {
+        "en": "Cooking Made Simple",
+        "ua": "Приготування Зроблено Простим",
+    },
+    "Cooking Made Simple text": {
+        "en": "Great food doesn’t have to be complicated. I’ll show you how to create delicious and visually impressive dishes in no time, using simple techniques and smart shortcuts.",
+        "ua": "Смачна їжа не повинна бути складною. Я покажу вам, як створювати смачні та візуально вражаючі страви швидко, використовуючи прості техніки та розумні скорочення."
+    },
+    "From Hummus to Bruschetta": {
+        "en": "Delicious Starters: From Hummus to Bruschetta",
+        "ua": "Смачні Закуски: З Хумусу до Брускети",
+    },
+    "From Hummus to Bruschetta text": {
+        "en": "In this course, I’ll teach you how to prepare a variety of flavorful appetizers, from creamy hummus and crispy bruschetta to authentic Italian flatbreads. You'll learn simple techniques, perfect ingredient combinations, and beautiful presentation tips to impress your guests with effortless, restaurant-quality starters.",
+        "ua": "У цьому курсі я навчу вас, як приготувати різноманітні смачні закуски, від кремового хумусу та хрусткої брускети до автентичних італійських плоских хлібів. Ви навчитеся простим технікам, ідеальним комбінаціям інгредієнтів та гарним порадам щодо презентації, щоб вражати своїх гостей легкими, як у ресторані, закусками."
+    }, 
+    "Pro break": {
+        "en":"Breakfast sets the tone for the day, and I’ll teach you how to make it both nutritious and delicious. From a simple, fluffy scramble to homemade croissants and traditional cottage cheese syrniki, you’ll learn the secrets to crafting the perfect morning meal. With the right techniques, breakfast will become your favorite ritual, and you'll gain the confidence to experiment with flavors, textures, and new recipes effortlessly.",
+        "ua": "Сніданок задає темп на день, я навчу вас, як зробити його смачним і корисним. Від простого, пухкого скремблу до саморобних круасанів та традиційних сирників, ви навчитеся таємницям створення ідеального ранкового страву. Завдяки цьому сніданок стане вашим улюбленим ритуалом і ви наберете впевненості, щоб експериментувати з новими смаками, текстурами та рецептами без зусиль."
+    },
+    "From Scratch": {
+        "en": "From Scratch: Mastering the Basics",
+        "ua": "З Нуля: Оволодіння Основами"
+    },
+    "From Scratch text": {
+        "en": "Great cooking starts with a solid foundation. I’ll teach you how to make essential breakfast staples from scratch—flaky croissants to hearty bread. Whether you're baking for the first time or refining your skills. You'll learn the techniques to create homemade breakfasts with confidence.",
+        "ua": "Велике приготування починається з міцної основи. Я навчу вас, як зробити основні сніданкові продукти з нуля — від пухких круасанів до ситного хліба. Незалежно від того, чи ви печете вперше, чи вдосконалюєте свої навички. Ви навчитеся технікам, які дозволять з упевненістю створювати домашні сніданки."
+    },
+    "The Art of Eggs": {
+        "en": "The Art of Eggs: Cook Them Your Way",
+        "ua": "Мистецтво  Готування Яєць: Робіть Їх Своїм Способом"
+    },
+    "The Art of Eggs text": {
+        "en": "Eggs are a breakfast essential, and mastering their preparation opens endless possibilities. From creamy scrambled eggs to perfectly poached eggs and classic omelets. I’ll show you the techniques to achieve restaurant-quality results every time. With practice, you'll cook eggs exactly how you love them.",
+        "ua": "Яйця - це сніданкова основа, і оволодіння їхньою підготовкою відкриває безкінечні можливості. Від кремових скремблів до ідеальних яєць пашот та класичних омлетів. Я покажу вам техніки, які допоможуть досягти ресторанного рівня щоразу. Після практики, ви будете готувати яйця тільки так, як ви їх любите."
+    },
+    "Balanced Eating": {
+        "en": "Balanced Eating: Fuel Your Day Right",
+        "ua": "Збалансоване Харчування: Правильне впродовж Дня"
+    },
+    "Balanced Eating text": {
+        "en": "A good breakfast isn’t just about taste—it’s about balance. I’ll teach you how to create meals that provide the right mix of protein, healthy fats, and fiber, ensuring energy and nourishment throughout the day.  Learn how to make food that’s both nutritious and satisfying without overcomplicating your routine.",
+        "ua": "Смачний сніданок - це не лише смак, а й баланс. Я покажу, як створювати страви, які забезпечують правильне поєднання білків, здорових жирів і клітковини, гарантуючи енергію та живлення протягом усього дня. Дізнайтеся, як готувати їжу, яка буде одночасно поживною та задовольняючою, без ускладнення вашої рутини."
+    },
+    "Build Your": {
+        "en": "Build Your Perfect Breakfast",
+        "ua": "Збудуйте Ідеальний Сніданок"
+    },
+    "Build Your text": {
+        "en": "Breakfast should fit your lifestyle and personal preferences. In this course, you’ll learn how to create a fully customizable breakfast, mixing and matching ingredients based on your taste, dietary needs, and schedule. Whether you prefer something light and fresh or hearty and indulgent, you’ll have the tools to make breakfast truly yours.",
+        "ua": "Сніданок повинен відповідати вашому стилю життя та особистим уподобанням. В цьому курсі ви дізнаєтеся, як створювати повністю налаштовуваний сніданок, поєднуючи інгредієнти на основі вашого смаку, дієтичних потреб та розкладу. Незалежно від того, чи ви віддаєте перевагу легкому та свіжому, чи серйозному та індульгентному. У вас будуть навички для цього, щоб зробити сніданок по-справжньому вашим."
+    },
+    "Let's Start": {
+        "en": "Let's Start",
+        "ua": "Почати"
+    }
 
 }
