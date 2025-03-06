@@ -439,13 +439,12 @@ body {
 
 #desserts {
     width: 100%;
-    padding: 50px 0;
+    padding: 65px 0;
     background: url(../img/lessons_teacher_bg.webp);
     background-repeat: no-repeat;
     background-size: cover; 
-    background-position: top;
+    background-position: center;
     text-align: center;
-    height: 800px;
 }
 
 .container-desserts {
@@ -507,7 +506,7 @@ body {
         flex-direction: column;
         text-align: center;
     }
-
+    
     .text-d {
         width: 100%;
         text-align: center;
@@ -530,3 +529,75 @@ body {
         margin-top: 15px; 
     }
 } 
+#des-grid {
+    width: 100%;
+    padding: 50px 0;
+    background: url(../img/bg_img.webp);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.des-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.des-item img {
+    width: 45%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.des-block {
+    width: 45%;
+    margin-left: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.des-block h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+
+}
+
+.des-block p {
+    font-size: 1.2rem;
+    color: #434141;
+}
+
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) {
+    .des-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .des-item img, .text-block {
+        width: 100%;
+    }
+
+    .des-item.reverse {
+        flex-direction: column-reverse;
+    }
+    .des-block {
+        margin-left: 0;
+        text-align: center;
+        margin-top: 0;
+        width: 100%;
+    }
+}
