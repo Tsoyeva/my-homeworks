@@ -208,6 +208,47 @@ const texts = {
     "Let's Start": {
         "en": "Let's Start",
         "ua": "Почати"
+    },
+    "From sponge cake to the perfect cake": {
+        "en": "From sponge cake to the perfect cake",
+        "ua": "Від бісквіта до ідеальго торта"
+    },
+    "sponge cake text": {   
+        "en": "I will teach you how to bake perfect fluffy, weightless biscuits. I'll show you how to assemble and level the cake. In this course, we will practice 6 cakes of different flavors and designs. You do not need any professional equipment except a mixer.",
+        "ua": "Я навчу вас, як пекти ідеальні пухкі, невагомі бісквіти. Покажу, як правильно зібрати і вирівняти торт. В цьому курсі у нас буде відпрацювання 6 різних за смаком та дизайном торти. При цьоиу вам не потрібно ніяке професійне обладнання окрім міксера."
+    },
+    "Perfect cream, stable fillings": {
+        "en": "Perfect cream, stable fillings",
+        "ua": "Ідеальний крем, стабільні начинки"
+    },
+    "Perfect cream, stable fillings text": {
+        "en": "We will learn how to make different types of cream, from soft buttercream to dense ganache for leveling. I'll also show you how to make cake fillings that are both stable and unstable.From real salted caramel to classic berry coulis. After all, any filling will not work, because the cake will be uneven, the cream will slide off, or even flow. But this will not happen to you if you follow my instructions!",
+        "ua": "Ми навчимося робити різні види крему, від м'якого вершкового крему до щільного ганаша для вірівнювання. Також я покажу вам, як робити начинки для торта, стабільні та нерідкі. Від справжньоі солоної карамелі до класичного ягідного кулі. Адже будь яка начинка не підійде, бо торт буде нерівний, крем буде сповзати, або навіть зовсім потече. Але з вами такого не станеться, якщо будете діяти по моім інструкціям!"
+    },
+    "French Macarons": {
+        "en": "French Macarons",
+        "ua": "Французькі макаронс"
+    },
+    "French Macarons text": {
+        "en": "I'll teach you how to make perfect lids for the same pasta. With a beautiful skirt and a meaty center. * different flavors, different fillings and different ganaches. I'll tell you my cooking secrets and share life hacks that will help you achieve consistency and make the same good pasta every time.",
+        "ua": "Я навчу вас, як робити ідеальні кришечки для тих самих макаронс. З гарною спідничкої та м'ясистою серединою. * різних смаків, різних начинок та різних ганашей. Розповім вам свої секрети приготування та поділюсь лайфхаками, які допоможуть достягти стабільності і робити кожен раз однаково добре."
+    },
+    "Homemade Ice Cream": {
+        "en": "Homemade Ice Cream: From Classic to Creative",
+        "ua": "Натуральне морозиво: від класичного до креативного"
+    },
+    "Homemade Ice Cream text": {
+        "en": "Only homemade ice cream can be tastier than ice cream! I will teach you how to make real ice cream from natural ingredients without special equipment. All we need is a whisk, a hundred-milliliter and a little sleight of hand. From classic creamy ice cream to exquisite hazelnut glazed ice cream and delicate berry sorbets. In this course, we will make both classic ice cream and popsicles on a stick.",
+        "ua": "Смачніше за морозиво може бути тільки домашне морозиво! Я навчу вас робити справжнє морозиво з натуральних інгрідієнтів без спеціального обладнання. Нам вистачить вінчика, сотійника і трохи спритності рук. Від класичного вершкового пломбіру до вишуканого фундучного в глазурі і ніжних ягідних сорбетів. В цьому курсі ми будемо робити, як класичне морозиво, так і попсікли на палочці."
+    },
+    "About Me": {
+        "en": "About Me",
+        "ua": "Про мене"
+    },
+    "About Me text": {
+        "en": " My name is Eva, and cooking for me is more than just cooking. It is creativity, inspiration and the opportunity to share knowledge. In 10 years of experience, I have gone from a hobby to a real calling - to teach others.  I had my own pastry shop, worked in various cafes, restaurants, and even a confectionery factory. I also participated in the creation of kitchens for several turnkey pastry shops. What started as an interesting experiment has now become a whole world of flavors, techniques, and endless possibilities. At Soul & Spice 138, we are passionate about combining traditional flavors with modern technology to create unique culinary experiences. I am committed to helping you discover the secrets of fine dining, whether you are a beginner or an experienced chef. Join us to explore our world of exquisite recipes and innovative cooking techniques.",
+        "ua": "Мене звуть Єва, і кулінарія для мене — це більше, ніж просто готування. Це творчість, натхнення та можливість ділитися знаннями. За 10 років досвіду я пройшла шлях від захоплення до справжнього покликання — навчати інших. Я мала власне кафе-кондитерську, працювала в різних кафе, ресторанах та навіть на кондитерській фабриці. Також я брала участь у створенні кухонь для кількох кондитерських цехів під ключ. Те, що починалося як цікавий експеримент, тепер стало цілим світом смаків, технік і безмежних можливостей. У Soul & Spice 138 ми захоплюємося поєднанням традиційних смаків із сучасними технологіями для створення унікальних кулінарних вражень. Я прагну допомогти вам відкрити для себе секрети вишуканої кухні, незалежно від того, чи ви початківець, чи досвідчений шеф-кухар. Приєднуйтесь до нас, щоб дослідити наш світ вишуканих рецептів та інноваційних методів приготування."
     }
+
 
 }

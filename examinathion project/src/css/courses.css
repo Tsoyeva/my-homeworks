@@ -374,13 +374,14 @@ body {
     overflow: hidden;
 }
 
-.horizontal-slider {
+.horizontl-slider {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
 
-.slide {
+.slid {
     min-width: 100%;
+    height: 350px;
     transition: transform 0.5s ease-in-out;
 }
 .grid-items.reverse {
@@ -432,7 +433,7 @@ body {
     }
     .slide {
         min-width: 100%;
-        height: 350px;
+        height: 300px;
         margin-top: 20px;
     }
 }
@@ -598,5 +599,6 @@ body {
         margin-left: 0;
         text-align: center;
         margin-top: 0;
+        width: 100%;
     }
 }

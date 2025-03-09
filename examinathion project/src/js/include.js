@@ -25,24 +25,28 @@ function initializeHeader() {
     const hamburger = document.querySelector(".hamburger");
     const header = document.querySelector("header");
     const welcomeSection = document.querySelector("#welcome");
-    
-    if (!menu || !hamburger || !header || !welcomeSection) return;
+
+    if (!menu || !hamburger || !header) return;
 
     hamburger.addEventListener("click", () => {
         menu.classList.toggle("show");
         header.classList.toggle("menu-open");
     });
 
-    window.addEventListener("scroll", () => {
-        const welcomeTop = welcomeSection.offsetTop;
-        const scrollPosition = window.scrollY + header.offsetHeight;
-        if (scrollPosition >= welcomeTop) {
-            header.classList.add("scrolled");
-        } else {
-            header.classList.remove("scrolled");
-        }
-    });
+    if (welcomeSection) {
+        window.addEventListener("scroll", () => {
+            const welcomeTop = welcomeSection.offsetTop;
+            const scrollPosition = window.scrollY + header.offsetHeight;
+    
+            if (scrollPosition >= welcomeTop) {
+                header.classList.add("scrolled");
+            } else {
+                header.classList.remove("scrolled");
+            }
+        });
+    }
 }
+
 
 function initializeLanguageDropdown() {
     const dropdown = document.querySelector(".language-dropdown");
