@@ -436,6 +436,9 @@ body {
         height: 300px;
         margin-top: 20px;
     }
+    .slider-wrpr {
+        width: 100%;
+    }
 }
 
 #desserts {
