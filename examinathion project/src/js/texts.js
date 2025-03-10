@@ -25,7 +25,7 @@ const texts = {
     },
     "about learn": {
         "en": "There won't be enticing phrases here about how my online school is the best and most productive, and that you're only here, that only I will teach you how to make smooth cakes, unusual breakfasts and the most delicious dishes. No. This is a team effort! And without your participation, hard work and determination nothing will work. It's not enough to watch a video, it's not enough to read the recipe and the theoretical part. Only daily practice will help to strive for perfection. Hands sometimes remember much better than the head. I, in turn, promise to be a good friend, a loving teacher and a strict critic.",   
-        "ua": "Тут не буде привабливих фраз про те, як моя онлайн-школа є кращою та найпродуктивнішою, і що тільки я навчаю вас готувати м'які тости, незвичні сніданки та найсмачніші страви. Ні. Це - командна робота! І без вашої участі, важкої праці та волі нічого не працюватиме. Незачем дивитися відео, не вистачає прочитати рецепт та теоретичну частину. Лише щоденна практика допоможе вам прагнути до досконалості. Руки іноді пам'ятають краще, ніж голова. Я, у свою чергу, обіцяю бути добрим другом, люблячим учителем та суворим критиком."
+        "ua": "Тут не буде привабливих фраз про те, як моя онлайн-школа є кращою та найпродуктивнішою і що тільки я навчу   вас готувати м'які тости, незвичні сніданки та найсмачніші страви. Ні. Це - командна робота! І без вашої участі, важкої праці та волі нічого не працюватиме. Лише щоденна практика допоможе вам прагнути до досконалості. Руки іноді пам'ятають краще, ніж голова. Я, у свою чергу, обіцяю бути добрим другом, люблячим учителем та суворим критиком."
 
     },
     "From Simle Dish to Birthday Cake": {
@@ -99,7 +99,7 @@ const texts = {
     },
     "Location text": {
         "en": "10 lessons in 10 weeks. We will communicate with each other through the Zoom platform and Telegram chat.",
-        "ua": "10 уроків у 10 тижнів. Мы будемо спілкуватися один з одним через платформу Zoom та чат Telegram."
+        "ua": "10 уроків за 10 тижнів. Ми будемо  спілкуватися один з одним через платформу Zoom та чат Telegram."
     },
     "Support": {
         "en": "Support",
