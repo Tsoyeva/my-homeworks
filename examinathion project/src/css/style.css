@@ -44,48 +44,54 @@ header .header-bg {
   opacity: 20%;
   z-index: -1;
 }
-
-.logo {
+header .logo {
   font-size: 20px;
   font-weight: bold;
   color: #f8f8f8;
   letter-spacing: 5px;
 }
-
-nav ul {
+header nav ul {
   list-style: none;
   display: flex;
 }
-nav ul li {
+header nav ul li {
   margin: 0 15px;
 }
-nav ul li a {
+header nav ul li a {
   color: white;
   text-decoration: none;
 }
-
-.hamburger {
+header .hamburger {
   display: none;
   flex-direction: column;
   cursor: pointer;
   background: none;
   border: none;
   outline: none;
+  z-index: 101;
 }
-.hamburger span {
-  width: 25px;
-  height: 3px;
+header .hamburger span {
+  width: 30px;
+  height: 2px;
   background: white;
-  margin: 5px;
+  margin: 3px;
   display: block;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
-
-.menu {
+header .hamburger.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+header .hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+header .hamburger.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+header .menu {
   display: flex;
 }
-
 @media (max-width: 768px) {
-  .menu {
+  header .menu {
     display: none;
     flex-direction: column;
     position: absolute;
@@ -102,17 +108,17 @@ nav ul li a {
     transform: translateY(-10px);
     transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s linear 0.3s;
   }
-  .menu.show {
+  header .menu.show {
     display: flex;
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
   }
-
-  .hamburger {
+  header .hamburger {
     display: flex;
   }
 }
+
 .hero {
   position: relative;
   background: url("../img/croissant.webp") no-repeat center center/cover;

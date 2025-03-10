@@ -28,24 +28,26 @@ function initializeHeader() {
 
     if (!menu || !hamburger || !header) return;
 
+
     hamburger.addEventListener("click", () => {
         menu.classList.toggle("show");
         header.classList.toggle("menu-open");
+        hamburger.classList.toggle("active"); 
     });
 
-    if (welcomeSection) {
-        window.addEventListener("scroll", () => {
-            const welcomeTop = welcomeSection.offsetTop;
-            const scrollPosition = window.scrollY + header.offsetHeight;
-    
-            if (scrollPosition >= welcomeTop) {
-                header.classList.add("scrolled");
-            } else {
-                header.classList.remove("scrolled");
-            }
-        });
+    function handleScroll() {
+        const scrollPosition = window.scrollY;
+
+        if (scrollPosition > 50) { 
+            header.classList.add("scrolled");
+        } else {
+            header.classList.remove("scrolled");
+        }
     }
+
+    window.addEventListener("scroll", handleScroll);
 }
+
 
 
 function initializeLanguageDropdown() {
