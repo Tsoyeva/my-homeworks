@@ -1,0 +1,609 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Albert Sans', sans-serif;
+    background: rgb(220, 216, 212);
+}
+.course {
+    position: relative;
+    background: url('../img/cloeup.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    text-align: left; 
+    color: white;
+    padding: 20px;
+    padding-top: 80px;
+}
+
+
+.course::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.course-content {
+    position: relative;
+    max-width: 600px; 
+    z-index: 1;
+    display: flex;
+    flex-direction: column; 
+    padding-left: 25px;
+}
+
+.course h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px; 
+}
+
+.course p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px; 
+}
+
+.course-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    color: white;
+    background: #708e54; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    align-self: flex-start; 
+}
+
+.course-btn:hover {
+    background: #47761d;
+}
+@media (max-width: 768px) {
+    .course {
+        height: auto; 
+        min-height: 80vh; 
+        flex-direction: column; 
+        justify-content: center; 
+        padding: 100px 15px 20px; 
+        text-align: center; 
+    }
+    .course-btn {
+        display: block;
+        margin: 20px auto 0; 
+    }
+}
+@media (max-width: 480px) {
+    .course {
+        padding: 120px 10px 20px; 
+    }
+
+    .course h2 {
+        font-size: 25px; 
+        margin-right: 20px;
+    }
+
+    .course p {
+        font-size: 16px; 
+        margin-right: 20px;
+    }
+
+    .course-btn {
+        font-size: 16px; 
+        padding: 10px 20px;
+        margin-top: 15px; 
+    }
+}
+
+#image-text-grid {
+    width: 100%;
+    padding: 50px 0;
+    background: url(../img/school_bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.grid-item img {
+    width: 45%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.text-block {
+    width: 45%;
+    margin-left: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.text-block h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+
+}
+
+.text-block p {
+    font-size: 1.2rem;
+    color: #434141;
+}
+
+
+.reverse {
+    flex-direction: row;
+}
+
+@media (max-width: 768px) {
+    .grid-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .grid-item img, .text-block {
+        width: 100%;
+    }
+
+    .grid-item.reverse {
+        flex-direction: column-reverse;
+    }
+    .text-block {
+        margin-left: 0;
+        text-align: center;
+        margin-top: 0;
+        padding: 15px;
+    }
+}
+
+#horizontal-slider-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.text-bl {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.text-bl h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.text-bl p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #666;
+}
+
+#horizontal-slider-section {
+    background: url(../img/bg_img.webp);
+}
+
+.slider-container {
+    position: relative;
+    width: 90vw;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.horizontal-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100vw; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide img {
+    max-height: 90vh; 
+    width: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(88, 86, 86, 0.447);
+    color: rgb(238, 229, 229);
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.prev-btn { left: 10px; }
+.next-btn { right: 10px; }
+
+@media (max-width: 768px) {
+    .slider-container {
+        width: 100vw;
+    }
+
+    .slide img {
+        max-height: 70vh;
+    }
+
+    .text-bl h2 {
+        font-size: 2rem;
+    }
+
+    .text-bl p {
+        font-size: 1.2rem;
+    }
+}
+
+#breakfasts {
+    width: 100%;
+    padding: 50px 0;
+    background: url(../img/lessons_teacher_bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: top;
+    text-align: center;
+    height: 800px;
+}
+
+.container-breakfast {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 0 20px;
+    margin-top: 100px;
+}
+
+.text-b {
+    width: 50%;
+    text-align: left;
+    
+}
+
+.text-b h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.text-b p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.container-breakfast img {
+    width: 50%;
+    max-width: 500px;
+    height: auto;
+    margin-bottom: 40px;
+}
+.breakfast-btn {
+        display: inline-block;
+        padding: 12px 25px;
+        font-size: 1.2rem;
+        color: white;
+        background: #708e54; 
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background 0.3s ease;
+        align-self: flex-start; 
+        margin-top: 20px;
+    }
+    
+    .breakfast-btn:hover {
+        background: #47761d;
+    }
+
+
+@media (max-width: 768px) {
+    .container-breakfast {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-b {
+        width: 100%;
+        text-align: center;
+    }
+
+    .container-breakfast img {
+        width: 100%;
+        margin-top: -40px;
+    }
+    .text-b h2 {
+        font-size: 2rem;
+    }
+
+    .text-b p {
+        font-size: 1.2rem;
+    }
+    .breakfast-btn {
+        font-size: 16px; 
+        padding: 10px 20px;
+        margin-top: 15px; 
+    }
+} 
+
+.slider-wrpr {
+    position: relative;
+    width: 45%;
+    overflow: hidden;
+}
+
+.horizontl-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slid {
+    min-width: 100%;
+    height: 350px;
+    transition: transform 0.5s ease-in-out;
+}
+.grid-items.reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.slide img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(87, 84, 84, 0.5);
+    color: rgb(220, 213, 213);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.prev-btn { left: 10px; }
+.next-btn { right: 10px; }
+
+@media (max-width: 768px) {
+    .grid-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .grid-item img, .text-block {
+        width: 100%;
+    }
+
+    .grid-items.reverse {
+        flex-direction: column;
+        align-items: center;
+    }
+    .text-block {
+        margin-left: 0;
+        text-align: center;
+    }
+    .slide {
+        min-width: 100%;
+        height: 300px;
+        margin-top: 20px;
+    }
+    .slider-wrpr {
+        width: 100%;
+    }
+}
+
+#desserts {
+    width: 100%;
+    padding: 50px 0;
+    background: url(../img/lessons_teacher_bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    text-align: center;
+}
+
+.container-desserts {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 0 20px;
+    margin-top: 100px;
+}
+
+.text-d {
+    width: 50%;
+    text-align: left;
+    
+}
+
+.text-d h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.text-d p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.container-desserts img {
+    width: 50%;
+    max-width: 500px;
+    height: auto;
+    margin-bottom: 40px;
+}
+.desserts-btn {
+        display: inline-block;
+        padding: 12px 25px;
+        font-size: 1.2rem;
+        color: white;
+        background: #708e54; 
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background 0.3s ease;
+        align-self: flex-start; 
+        margin-top: 20px;
+    }
+    
+    .desserts-btn:hover {
+        background: #47761d;
+    }
+
+
+@media (max-width: 768px) {
+    .container-desserts {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .text-d {
+        width: 100%;
+        text-align: center;
+    }
+
+    .container-desserts img {
+        width: 100%;
+        margin-top: -40px;
+    }
+    .text-d h2 {
+        font-size: 2rem;
+    }
+
+    .text-d p {
+        font-size: 1.2rem;
+    }
+    .desserts-btn {
+        font-size: 16px; 
+        padding: 10px 20px;
+        margin-top: 15px; 
+    }
+} 
+#des-grid {
+    width: 100%;
+    padding: 50px 0;
+    background: url(../img/bg_img.webp);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.des-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.des-item img {
+    width: 45%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.des-block {
+    width: 45%;
+    margin-left: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.des-block h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+
+}
+
+.des-block p {
+    font-size: 1.2rem;
+    color: #434141;
+}
+
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) {
+    .des-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .des-item img, .text-block {
+        width: 100%;
+    }
+
+    .des-item.reverse {
+        flex-direction: column-reverse;
+    }
+    .des-block {
+        margin-left: 0;
+        text-align: center;
+        margin-top: 0;
+        width: 100%;
+        padding: 15px;
+    }
+}

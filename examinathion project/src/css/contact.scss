@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    flex: 1;
+  }
+  #contact {
+    text-align: center;
+    padding: 100px 20px;
+    color: #666;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    background-color: rgb(220, 216, 212);
+    background-image: url(../img/bg_img.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    margin-top: 40px;
+}
+#contact .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
