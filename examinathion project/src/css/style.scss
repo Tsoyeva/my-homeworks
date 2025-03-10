@@ -512,12 +512,14 @@ footer {
 .language-menu {
     position: absolute;  
     top: 100%;           
-    left: -10px;
+    left: -20px;
+    text-align: center;
     display: none;
     list-style: none;
     padding: 5px 0;
-    background: rgba(194, 173, 122, 0.95);
-    z-index: 1000;     
+    z-index: 1000;    
+    background: rgba(126, 114, 84, 0.3); 
+    transition: background 0.3s ease-in-out; 
   }
   
 
@@ -525,7 +527,10 @@ footer {
     padding: 5px 15px;
     cursor: pointer;
 }
-
+ 
+header.scrolled .language-menu {
+    background: rgba(194, 173, 122, 0.95); 
+}
 
 .language-dropdown.active .language-menu {
     display: block;
