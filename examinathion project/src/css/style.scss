@@ -495,11 +495,16 @@ footer {
 }
 
 .language-menu {
+    position: absolute;  
+    top: 100%;           
+    left: -10px;
     display: none;
     list-style: none;
     padding: 5px 0;
-    border-radius: 5px;
-}
+    background: rgba(194, 173, 122, 0.95);
+    z-index: 1000;     
+  }
+  
 
 .language-menu li {
     padding: 5px 15px;
@@ -509,4 +514,16 @@ footer {
 
 .language-dropdown.active .language-menu {
     display: block;
+}
+
+@media (max-width: 768px) {
+    .language-dropdown.active .language-menu {
+        display: block;
+        position: relative;
+        background: none;
+    }
+    .language-dropdown {
+        position: relative;
+        margin-left: 30px;
+    }
 }
