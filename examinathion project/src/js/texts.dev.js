@@ -280,5 +280,17 @@ var texts = {
   "Payment Options text": {
     "en": "Pay for your course conveniently by card or bank transfer. We also offer flexible installment plans to make our courses accessible to everyone.",
     "ua": "Оплатіть курс зручно карткою або банківським переказом. Ми також пропонуємо гнучкі плани розкладки платежів, щоб наші курси були доступні для кожного."
+  },
+  "Home page": {
+    "en": "Home",
+    "ua": "Головна"
+  },
+  "Our Courses page": {
+    "en": "Our Courses",
+    "ua": "Наші курси"
+  },
+  "Contact page": {
+    "en": "Contact",
+    "ua": "Контакти"
   }
 };
