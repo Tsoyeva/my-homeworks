@@ -51,7 +51,7 @@ var texts = {
   },
   "Breakfast crs": {
     "en": "Start your day right with our online course on breakfast preparation! Learn to make a variety of morning favorites, from fluffy pancakes and perfect omelets to healthy smoothie bowls and homemade pastries. With expert tips and easy-to-follow lessons, you’ll be able to create delicious and energizing breakfasts.",
-    "ua": "Почніть день правильно з нашим онлайн-курсом з приготування сніданків! Навчіться готувати різноманітні улюблені ранкові страви, від пухких панкейків та ідеальних омлетів до здорових боулів зі смузі та саморобних випічок. Pfdlzrb експертним порадам та легким урокам, ви будете здатні готувати смачні та енергійні сніданки."
+    "ua": "Почніть день правильно з нашим онлайн-курсом з приготування сніданків! Навчіться готувати різноманітні улюблені ранкові страви, від пухких панкейків та ідеальних омлетів до здорових боулів зі смузі та саморобних випічок. Завдяки  порадам та легким урокам, ви будете здатні готувати смачні та енергійні сніданки."
   },
   "course appetizers": {
     "en": "Simple Dishes & Appetizers",
