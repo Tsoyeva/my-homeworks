@@ -248,5 +248,37 @@ var texts = {
   "About Me text": {
     "en": " My name is Eva, and cooking for me is more than just cooking. It is creativity, inspiration and the opportunity to share knowledge. In 10 years of experience, I have gone from a hobby to a real calling - to teach others.  I had my own pastry shop, worked in various cafes, restaurants, and even a confectionery factory. I also participated in the creation of kitchens for several turnkey pastry shops. What started as an interesting experiment has now become a whole world of flavors, techniques, and endless possibilities. At Soul & Spice 138, we are passionate about combining traditional flavors with modern technology to create unique culinary experiences. I am committed to helping you discover the secrets of fine dining, whether you are a beginner or an experienced chef. Join us to explore our world of exquisite recipes and innovative cooking techniques.",
     "ua": "Мене звуть Єва, і кулінарія для мене — це більше, ніж просто готування. Це творчість, натхнення та можливість ділитися знаннями. За 10 років досвіду я пройшла шлях від захоплення до справжнього покликання — навчати інших. Я мала власне кафе-кондитерську, працювала в різних кафе, ресторанах та навіть на кондитерській фабриці. Також я брала участь у створенні кухонь для кількох кондитерських цехів під ключ. Те, що починалося як цікавий експеримент, тепер стало цілим світом смаків, технік і безмежних можливостей. У Soul & Spice 138 ми захоплюємося поєднанням традиційних смаків із сучасними технологіями для створення унікальних кулінарних вражень. Я прагну допомогти вам відкрити для себе секрети вишуканої кухні, незалежно від того, чи ви початківець, чи досвідчений шеф-кухар. Приєднуйтесь до нас, щоб дослідити наш світ вишуканих рецептів та інноваційних методів приготування."
+  },
+  "Email Contact": {
+    "en": "Email Contact",
+    "ua": "Електронна пошта"
+  },
+  "Email Contact text": {
+    "en": "Get in touch with us via email for more information, consultations, or any inquiries. We’re here to help and will respond promptly to your message.",
+    "ua": "Зв'яжіться з нами електронною поштою для отримання додаткової інформації, консультацій, або з будь-яких запитань. Ми тут, щоб допомогти. Відповімо на ваш лист швидко."
+  },
+  "Telegram Group": {
+    "en": "Telegram Group Chat",
+    "ua": "Груповий чат Telegram"
+  },
+  "Telegram Group text": {
+    "en": "Join our Telegram group chat to connect with instructors and fellow students. Share your culinary experiences, ask questions, and get real-time support throughout your learning journey",
+    "ua": "Приєднуйтесь до нашого групового чату в Telegram, щоб зв’язатися з викладачами та іншими студентами. Діліться своїм кулінарним досвідом, ставте запитання та отримуйте підтримку в режимі реального часу протягом усього навчання."
+  },
+  "Zoom Video": {
+    "en": "Zoom Video Consultations",
+    "ua": "Відеоконсультації через Zoom"
+  },
+  "Zoom Video text": {
+    "en": "Once the course begins, you'll receive links to video lessons and regular Zoom calls with our experts. These sessions ensure you get extra guidance and support whenever you need it.",
+    "ua": "Після початку курсу ви отримаєте посилання на відеоуроки та регулярні відеодзвінки  через Zoom. Ці сеанси гарантують, що ви отримаєте додаткову допомогу та підтримку, коли вам це буде потрібно"
+  },
+  "Payment Options": {
+    "en": "Payment Options",
+    "ua": "Варіанти оплати"
+  },
+  "Payment Options text": {
+    "en": "Pay for your course conveniently by card or bank transfer. We also offer flexible installment plans to make our courses accessible to everyone.",
+    "ua": "Оплатіть курс зручно карткою або банківським переказом. Ми також пропонуємо гнучкі плани розкладки платежів, щоб наші курси були доступні для кожного."
   }
 };
