@@ -7,6 +7,7 @@
   body {
     background: rgb(220, 216, 212);
     font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
   }
   
   html {
@@ -279,7 +280,8 @@
 }
 
 .slider-text {
-    max-width: 50%;
+    max-width: 60%;
+    padding: 10px;
 }
 
 .slider-text h2 {
@@ -361,6 +363,16 @@
         width: 100%;
         height: auto;
     }
+    .slider-section{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+        text-align: center;
+        gap: 25px;
+    }
+
     .slider-track {
          
             from {
@@ -386,10 +398,10 @@
 @media (max-width: 480px) {
     .slider-container {
         height: auto; 
-        width: 60%;
+        width: 100%;
     }
     .slider-text {
-        width: 50%;
+        max-width: 100%;
     }
     .slider-btn {
         width: 15px;
@@ -409,8 +421,23 @@
     padding: 50px 20px;
     color: #666;
     margin: 0 auto;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     background: rgb(220, 216, 212);
+}
+
+@media (max-width: 768px) {
+    blockquote {
+        margin-top: 15px;
+        font-size: 1.2rem;
+    }
+
+}
+@media (max-width: 480px) {
+    blockquote {
+        margin-top: 20px;
+        font-size: 1.3rem;
+    }
+
 }
 
 #learn {

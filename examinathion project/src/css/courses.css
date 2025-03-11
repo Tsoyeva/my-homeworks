@@ -371,6 +371,29 @@ body {
     margin-top: 15px;
   }
 }
+#blck {
+  text-align: center;
+  padding: 50px 20px;
+  color: #666;
+  margin: 0 auto;
+  font-size: 1.4rem;
+  background: #dcd8d4;
+}
+
+@media (max-width: 768px) {
+  #blck {
+    margin-top: 70px;
+    padding: 90px 20px;
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 480px) {
+  #blck {
+    margin-top: 50px;
+    padding: 85px 0 0;
+    font-size: 1.2rem;
+  }
+}
 .slider-wrpr {
   position: relative;
   width: 45%;
