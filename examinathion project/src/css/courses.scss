@@ -258,6 +258,9 @@ body {
 .next-btn { right: 10px; }
 
 @media (max-width: 768px) {
+    #horizontal-slider-section {
+        height: auto;
+    }
     .slider-container {
         width: 100vw;
     }

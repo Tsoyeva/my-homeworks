@@ -261,6 +261,10 @@ body {
 }
 
 @media (max-width: 768px) {
+  #horizontal-slider-section {
+    height: auto;
+  }
+
   .slider-container {
     width: 100vw;
   }
