@@ -575,3 +575,11 @@ header.scrolled .language-menu {
         margin-left: 30px;
     }
 }
+@media (max-width: 480px) {
+    .language-dropdown.active .language-menu {
+        display: block;
+        position: relative;
+        background: none;
+        margin-right: -22px;
+    }
+}
