@@ -532,6 +532,7 @@ header.scrolled .language-menu {
     display: block;
     position: relative;
     background: none;
+    margin-right: -15px;
   }
 
   .language-dropdown {
