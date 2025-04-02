@@ -21,10 +21,10 @@ function loadComponent(selector, file, callback) {
 }
 
 function initializeHeader() {
-  var menu = document.querySelector(".menu");
-  var hamburger = document.querySelector(".hamburger");
-  var header = document.querySelector("header");
-  var welcomeSection = document.querySelector("#welcome");
+  let menu = document.querySelector(".menu");
+  let hamburger = document.querySelector(".hamburger");
+  let header = document.querySelector("header");
+  let welcomeSection = document.querySelector("#welcome");
   if (!menu || !hamburger || !header) return;
   hamburger.addEventListener("click", function () {
     menu.classList.toggle("show");
@@ -33,7 +33,7 @@ function initializeHeader() {
   });
 
   function handleScroll() {
-    var scrollPosition = window.scrollY;
+    let scrollPosition = window.scrollY;
 
     if (scrollPosition > 50) {
       header.classList.add("scrolled");
@@ -46,7 +46,7 @@ function initializeHeader() {
 }
 
 function initializeLanguageDropdown() {
-  var dropdown = document.querySelector(".language-dropdown");
+  let dropdown = document.querySelector(".language-dropdown");
 
   if (!dropdown) {
     console.error("Не найден элемент .language-dropdown");
